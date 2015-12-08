@@ -41,17 +41,17 @@ public class QuestionGetter {
 	   readingPList = ((PListXMLHandler) parser.getHandler()).getPlist();
 	}
 	
-	public int getExerciseCount(){
+	public int getDiscreteExerciseCount(){
 		Array exercises = (Array) discretePList.getRootElement();
 		return exercises.size();
 	}
 	
-	public DiscreteExercise getExercise(int exerciseIndex){
+	public DiscreteExercise getDiscreteExercise(int exerciseIndex){
 		Array exercises = (Array) discretePList.getRootElement();
 		return new DiscreteExercise((Array) exercises.get(exerciseIndex));
 	}
 	
-	public DiscreteExercise getCategory(int type){
+	public DiscreteExercise getDiscreteCategory(int type){
 		Array exercises = (Array) discretePList.getRootElement();
 		DiscreteExercise exerciseCategory = new DiscreteExercise();
 		
@@ -68,6 +68,31 @@ public class QuestionGetter {
 		
 		exerciseCategory.questionCount = list.size();
 		exerciseCategory.discreteQuestions = (DiscreteQuestion[]) list.toArray();
+		return exerciseCategory;
+	}
+	
+	public ReadingExercise getReadingExercise(int exerciseIndex){
+		Array exercises = (Array) readingPList.getRootElement();
+		return new ReadingExercise((Array) exercises.get(exerciseIndex));
+	}
+	
+	public ReadingExercise getReadingCategory(int type){
+		Array exercises = (Array) readingPList.getRootElement();
+		ReadingExercise exerciseCategory = new ReadingExercise();
+		
+		ArrayList list = new ArrayList();
+		for (int i = 0; i < exercises.size(); i++){
+			ReadingExercise exercise = new ReadingExercise((Array) exercises.get(i));
+			for (int j = 0;j < exercise.questionCount; j++){
+				ReadingQuestion question = exercise.readingQuestions[j];
+				if (question.type == type){
+					list.add(question);
+				}
+			}
+		}
+		
+		exerciseCategory.questionCount = list.size();
+		exerciseCategory.readingQuestions = (ReadingQuestion[]) list.toArray();
 		return exerciseCategory;
 	}
 }

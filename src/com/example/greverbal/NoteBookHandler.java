@@ -49,6 +49,19 @@ public class NoteBookHandler {
 		editor.commit(); 
 	}
 
+	public int find(int exerciseIndex, int questionIndex, int category){
+		
+		String[] questionArray = wrongQuestions.split(",");
+		for (int i = 0; i < questionArray.length - 1; i += 3){
+			if (questionArray[i].equals(String.valueOf(exerciseIndex)) && 
+					questionArray[i + 1].equals(String.valueOf(questionIndex)) &&
+					questionArray[i + 2].equals(String.valueOf(category))){
+				return i/3;
+			}
+		}
+		return -1;
+	}
+
 	public NoteBook getNoteBook(){
 		
 		String[] questionArray = wrongQuestions.split(",");
@@ -56,4 +69,5 @@ public class NoteBookHandler {
 		return new NoteBook(questionArray);
 		
 	}
+	
 }

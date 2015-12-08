@@ -36,6 +36,7 @@
         		android:id="@+id/QuestionTextScrollView"
         		android:layout_width="fill_parent"
         		android:layout_height="wrap_content"
+        		android:layout_alignParentTop="true"
 				/>
     		
     		<com.example.greverbal.AnswerView

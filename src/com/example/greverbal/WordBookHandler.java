@@ -27,11 +27,11 @@ public class WordBookHandler {
 		
 	}
 	
-	public void deleteWord(String word){
+	public void deleteWord(String word, String explanation){
 		
 		String[] wordArray = words.split(",");
 		for (int i = 0; i < wordArray.length - 1; i += 2){
-			if (wordArray[i].equals(word)){
+			if (wordArray[i].equals(word) && wordArray[i+1].equals(explanation)){
 				wordArray[i] = "";
 				wordArray[i+1] = "";
 				break;

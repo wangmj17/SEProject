@@ -49,6 +49,7 @@ public class DiscreteQuestionsActivity extends Activity {
 	private XmlPullParser parser;
 	private AttributeSet attrs;
 	private WordBookHandler wordBookHandler;
+	private NoteBookHandler noteBookHandler;
 	private int numOfOptions;
 	private int questionType;
 	private int currentIndex = 0;
@@ -91,10 +92,11 @@ public class DiscreteQuestionsActivity extends Activity {
         AssetManager assetManager = this.getAssets();
 		
 		QuestionGetter questionGetter = new QuestionGetter(assetManager);
-		exercise = questionGetter.getExercise(0);
+		exercise = questionGetter.getDiscreteExercise(0);
 		questionCount = exercise.questionCount;
 		
 		wordBookHandler = new WordBookHandler(this);
+		noteBookHandler = new NoteBookHandler(this);
 		
         init();
         
@@ -194,9 +196,13 @@ public class DiscreteQuestionsActivity extends Activity {
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
-				for (int i = 0; i < numOfOptions; i++){
-					OptionButtonView optionButtonView = (OptionButtonView) discreteQuestionsActivity.findViewById(250 + i);
-					optionButtonView.showOrHideExplanation();
+				for (int i = 1; i <= lastID - 250; i++){
+					View v = discreteQuestionsActivity.findViewById(250 + i);
+					if ( v instanceof OptionButtonView){
+						OptionButtonView optionButtonView = (OptionButtonView) v;
+						optionButtonView.showOrHideExplanation();
+					}
+					
 				}
 			}
 		});
@@ -208,12 +214,17 @@ public class DiscreteQuestionsActivity extends Activity {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				showAnswer();
-				for (int i = 0; i < numOfOptions; i++){
-					OptionButtonView optionButtonView = (OptionButtonView) discreteQuestionsActivity.findViewById(250 + i);
-					optionButtonView.showExplanation();
+				for (int i = 1; i <= lastID - 250; i++){
+					View v = discreteQuestionsActivity.findViewById(250 + i);
+					if ( v instanceof OptionButtonView){
+						OptionButtonView optionButtonView = (OptionButtonView) v;
+						optionButtonView.showOrHideExplanation();
+					}
 				}
-				showExplanationButton.setClickable(false);
-				checkAnswerButton.setClickable(false);
+				showExplanationButton.setEnabled(false);
+				checkAnswerButton.setEnabled(false);
+				showExplanationButton.setAlpha(0.5f);
+				checkAnswerButton.setAlpha(0.5f);
 			}
 		});
 	}
@@ -253,17 +264,23 @@ public class DiscreteQuestionsActivity extends Activity {
 			View view = (View) discreteQuestionsActivity.findViewById(250 + i);
 			mainScrollViewLayout.removeView(view);
 		}
+		checkAnswerButton.setEnabled(true);
+		checkAnswerButton.setAlpha(1.0f);
+		showExplanationButton.setEnabled(true);
+		showExplanationButton.setAlpha(1.0f);
 	}
 	
 	private void showAnswer(){
 		
     	answerView.setVisibility(View.VISIBLE);
     	RelativeLayout.LayoutParams lp =  new RelativeLayout.LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
-    	lp.addRule(RelativeLayout.BELOW, 250 + numOfOptions - 1);
+    	lp.addRule(RelativeLayout.BELOW, lastID);
     	lp.setMargins(dip2px(this,5), dip2px(this,10), dip2px(this,5), dip2px(this,10));
     	answerView.setLayoutParams(lp);
 		answerView.setYourAnswerContent("");
 		answerView.setRightAnswerContent(question.answer);
+		answerView.setAddtoNoteBookImage(this, question.exerciseIndex, question.questionIndex, question.type, noteBookHandler);
+		answerView.setAddtoNoteBookAction(question.exerciseIndex, question.questionIndex, question.type, noteBookHandler);
 		
 	}
 	
@@ -316,7 +333,6 @@ public class DiscreteQuestionsActivity extends Activity {
     		lp.setMargins(dip2px(this,10), dip2px(this,10), dip2px(this,10), dip2px(this,5));
     		mainScrollViewLayout.addView(optionButtonView,lp);
     	}
-
     }
     
     public static void showWholeText(){
