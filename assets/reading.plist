@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<array>
+		<dict>
+			<key>exerciseIndex</key>
+			<integer>0</integer>
+			<key>questionIndex</key>
+			<integer>0</integer>
+			<key>type</key>
+			<integer>1</integer>
+			<key>options</key>
+			<array>
+				<string>A. The rate of expansion in each sector </string>
+				<string>B. The percentage of employees in each sector who were men</string>
+				<string>C. The trend in the wages of men employed in each sector</string>
+				<string>D. The attitude of the popular media toward the employment of women in each sector</string>
+				<string>E. The extent to which women in each sector were satisfied with their jobs</string>
+			</array>
+			<key>answer</key>
+			<string>B</string>
+			<key>question</key>
+			<string>It can be inferred from the passage that the manufacturing and agricultural sectors in the United States following the Second World War differed in which of the following respects? </string>
+			<key>text</key>
+			<string>While most scholarship on women’s employment in the United States recognizes that the Second World War (1939– 1945) dramatically changed the role of women in the workforce, these studies also acknowledge that few women remained in manufacturing jobs once men returned from the war. But in agriculture, unlike other industries where women were viewed as temporary workers, women’s employment did not end with the war. Instead, the expansion of agriculture and a steady decrease in the number of male farmworkers combined to cause the industry to hire more women in the postwar years. 
+Consequently, the 1950s saw a growing number of women engaged in farm labor, even though rhetoric in the popular media called for the return of women to domestic life. </string>
+		</dict>
+		<dict>
+			<key>exerciseIndex</key>
+			<integer>0</integer>
+			<key>questionIndex</key>
+			<integer>1</integer>
+			<key>type</key>
+			<integer>0</integer>
+			<key>options</key>
+			<array>
+				<string>A. Most women who joined the workforce during the Second World War wanted to return to domestic life  when the war ended.</string>
+				<string>B. The great majority of women who joined the workforce during the Second World War were employed in  manufacturing jobs.</string>
+				<string>C. The end of the Second World War was followed by a large-scale transfer of women workers from  manufacturing to agriculture. </string>
+				<string>D. The increase in women’s employment that accompanied the Second World War was longer lasting in  agriculture than it was in manufacturing. </string>
+				<string>E. The popular media were more forceful in calling for women to join the workforce during the Second World  War than in calling for women to return to domestic life after the war.</string>
+			</array>
+			<key>answer</key>
+			<string>D</string>
+			<key>question</key>
+			<string>Which of the following statements about women’s employment in the United States during and after the Second World War is most clearly supported by the passage?</string>
+			<key>text</key>
+			<string>While most scholarship on women’s employment in the United States recognizes that the Second World War (1939– 1945) dramatically changed the role of women in the workforce, these studies also acknowledge that few women remained in manufacturing jobs once men returned from the war. But in agriculture, unlike other industries where women were viewed as temporary workers, women’s employment did not end with the war. Instead, the expansion of agriculture and a steady decrease in the number of male farmworkers combined to cause the industry to hire more women in the postwar years. 
+Consequently, the 1950s saw a growing number of women engaged in farm labor, even though rhetoric in the popular media called for the return of women to domestic life. </string>
+		</dict>
+		<dict>
+			<key>exerciseIndex</key>
+			<integer>0</integer>
+			<key>questionIndex</key>
+			<integer>2</integer>
+			<key>type</key>
+			<integer>0</integer>
+			<key>options</key>
+			<array>
+				<string>A. How it is regarded by listeners who prefer rock to the classics</string>
+				<string>B. How it has affected the commercial success of Class’s music</string>
+				<string>C. Whether it has contributed to a revival of interest among other composers in using popular elements in  their compositions</string>
+				<string>D. Whether it has had a detrimental effect on Glass’s reputation as a composer of classical music</string>
+				<string>E. Whether it has caused certain of Glass’s works to be derivative in quality</string>
+			</array>
+			<key>answer</key>
+			<string>E</string>
+			<key>question</key>
+			<string>The passage addresses which of the following issues related to Glass’s use of popular elements in his classical compositions?</string>
+			<key>text</key>
+			<string>[1]Reviving hibernation in the United States during the 1960s, composer Philip Glass (born 1937) embraced the ethos of popular music without imitating it. [2]Glass based two symphonies on music by rock musicians David Bowie and Brian Eno, but the symphonies’ sound is distinctively his. [3]Popular elements do not appear out of place in Glass’s classical music, which from its early days has shared certain harmonies and rhythms with rock music. [4]Yet this use of popular elements has not made Glass a composer of popular music. [5]His music is not a version of popular music packaged to attract classical listeners; it is high art for listeners steeped in rock rather than the classics.</string>
+		</dict>
+		<dict>
+			<key>exerciseIndex</key>
+			<integer>0</integer>
+			<key>questionIndex</key>
+			<integer>3</integer>
+			<key>type</key>
+			<integer>2</integer>
+			<key>options</key>
+			<array>
+				<string>A. A return to the use of popular music in classical compositions</string>
+				<string>B. An attempt to elevate rock music an artistic status more closely approximating that of classical music</string>
+				<string>C. A long-standing tendency to incorporate elements from two apparently disparate musical styles</string>
+			</array>
+			<key>answer</key>
+			<string>AC</string>
+			<key>question</key>
+			<string>The passage suggests that Glass’s work displays which of the following qualities? (more than one answer may be correct)</string>
+			<key>text</key>
+			<string>[1]Reviving hibernation in the United States during the 1960s, composer Philip Glass (born 1937) embraced the ethos of popular music without imitating it. [2]Glass based two symphonies on music by rock musicians David Bowie and Brian Eno, but the symphonies’ sound is distinctively his. [3]Popular elements do not appear out of place in Glass’s classical music, which from its early days has shared certain harmonies and rhythms with rock music. [4]Yet this use of popular elements has not made Glass a composer of popular music. [5]His music is not a version of popular music packaged to attract classical listeners; it is high art for listeners steeped in rock rather than the classics.</string>
+		</dict>
+		<dict>
+			<key>exerciseIndex</key>
+			<integer>0</integer>
+			<key>questionIndex</key>
+			<integer>4</integer>
+			<key>type</key>
+			<integer>3</integer>
+			<key>options</key>
+			<array>
+				<string>A. [1]</string>
+				<string>B. [2]</string>
+				<string>C. [3]</string>
+				<string>D. [4]</string>
+				<string>E. [5]</string>
+			</array>
+			<key>answer</key>
+			<string>E</string>
+			<key>question</key>
+			<string>Select the sentence that distinguishes two ways of integrating rock and classical music.</string>
+			<key>text</key>
+			<string>[1]Reviving hibernation in the United States during the 1960s, composer Philip Glass (born 1937) embraced the ethos of popular music without imitating it. [2]Glass based two symphonies on music by rock musicians David Bowie and Brian Eno, but the symphonies’ sound is distinctively his. [3]Popular elements do not appear out of place in Glass’s classical music, which from its early days has shared certain harmonies and rhythms with rock music. [4]Yet this use of popular elements has not made Glass a composer of popular music. [5]His music is not a version of popular music packaged to attract classical listeners; it is high art for listeners steeped in rock rather than the classics.</string>
+		</dict>
+		<dict>
+			<key>exerciseIndex</key>
+			<integer>0</integer>
+			<key>questionIndex</key>
+			<integer>5</integer>
+			<key>type</key>
+			<integer>0</integer>
+			<key>options</key>
+			<array>
+				<string>A. explaining why certain research findings have created controversy</string>
+				<string>B. pointing out the flaws in a research methodology and suggesting a different approach</string>
+				<string>C. presenting evidence to challenge an explanation and offering an alternative explanation</string>
+				<string>D. elucidating the means by which certain groups have adapted to their environment</string>
+				<string>E. defending a long-held interpretation by presenting new research findings</string>
+			</array>
+			<key>answer</key>
+			<string>C</string>
+			<key>question</key>
+			<string>The passage is primarily concerned with</string>
+			<key>text</key>
+			<string>Until recently, many anthropologists assumed that the environment of what is now the southwestern United States shaped the social history and culture of the region’s indigenous peoples. Building on this assumption, archaeologists asserted that adverse environmental conditions and droughts were responsible for the disappearances and migrations of southwestern populations from many sites they once inhabited. 
+However, such deterministic arguments fail to acknowledge that local environmental variability in the Southwest makes generalizing about that environment difficult. To examine the relationship between environmental variation and sociocultural change in the Western Pueblo region of central Arizona, which indigenous tribes have occupied continuously for at least 800 years, a research team recently reconstructed the climatic, vegetational, and erosional cycles of past centuries. The researchers found it impossible to provide a single, generally applicable characterization of environmental conditions for the region. Rather, they found that local areas experienced different patterns of rainfall, wind, and erosion, and that such conditions had prevailed in the Southwest for the last 1,400 years. Rainfall, for example, varied within and between local valley systems, so that even adjacent agricultural fields can produce significantly different yields. The researchers characterized episodes of variation in southwestern environments by frequency: low-frequency environmental processes occur in cycles longer than one human generation, which generally is considered to last about 25 years, and high-frequency processes have shorter cycles. The researchers pointed out that low-frequency processes, such as fluctuations in stream flow and groundwater levels, would not usually be apparent to human populations. In contrast, high-frequency fluctuations such as seasonal temperature variations are observable and somewhat predictable, so that groups could have adapted their behaviors accordingly. When the researchers compared sequences of sociocultural change in the Western Pueblo region with episodes of low- and high-frequency environmental variation, however, they found no simple correlation between environmental process and sociocultural change or persistence. 
+Although early Pueblo peoples did protect themselves against environmental risk and uncertainty, they responded variously on different occasions to similar patterns of high-frequency climatic and environmental change. The researchers identified seven major adaptive responses, including increased mobility, relocation of permanent settlements, changes in subsistence foods, and reliance on trade with other groups. These findings suggest that groups’ adaptive choices depended on cultural and social as well as environmental factors and were flexible strategies rather than uncomplicated reactions to environmental change. Environmental conditions mattered, but they were rarely, if ever, sufficient to account for sociocultural persistence and change. Group size and composition, culture, contact with other groups, and individual choices and actions were — barring catastrophes such as floods or earthquakes — more significant for a population’s survival than were climate and environment.</string>
+		</dict>
+		<dict>
+			<key>exerciseIndex</key>
+			<integer>0</integer>
+			<key>questionIndex</key>
+			<integer>6</integer>
+			<key>type</key>
+			<integer>1</integer>
+			<key>options</key>
+			<array>
+				<string>A. A population remained in a certain region at least a century after erosion wore away much of the topsoil  that sustained grass for their grazing animals. </string>
+				<string>B. The range of a certain group’s agricultural activity increased over a century of gradual decrease in annual  rainfall. </string>
+				<string>C. As winters grew increasingly mild in a certain region, the nomadic residents of the region continued to  move between their summer and winter encampments. </string>
+				<string>D. An agricultural population began to trade for supplies of a grain instead of producing the grain in its own  fields as it had in the past.</string>
+				<string>E. A half century of drought and falling groundwater levels caused a certain population to abandon their  settlements along a riverbank.</string>
+			</array>
+			<key>answer</key>
+			<string>E</string>
+			<key>question</key>
+			<string>Which of the following findings would most strongly support the assertion made by the archaeologists mentioned in the second sentence?</string>
+			<key>text</key>
+			<string>Until recently, many anthropologists assumed that the environment of what is now the southwestern United States shaped the social history and culture of the region’s indigenous peoples. Building on this assumption, archaeologists asserted that adverse environmental conditions and droughts were responsible for the disappearances and migrations of southwestern populations from many sites they once inhabited. 
+However, such deterministic arguments fail to acknowledge that local environmental variability in the Southwest makes generalizing about that environment difficult. To examine the relationship between environmental variation and sociocultural change in the Western Pueblo region of central Arizona, which indigenous tribes have occupied continuously for at least 800 years, a research team recently reconstructed the climatic, vegetational, and erosional cycles of past centuries. The researchers found it impossible to provide a single, generally applicable characterization of environmental conditions for the region. Rather, they found that local areas experienced different patterns of rainfall, wind, and erosion, and that such conditions had prevailed in the Southwest for the last 1,400 years. Rainfall, for example, varied within and between local valley systems, so that even adjacent agricultural fields can produce significantly different yields. The researchers characterized episodes of variation in southwestern environments by frequency: low-frequency environmental processes occur in cycles longer than one human generation, which generally is considered to last about 25 years, and high-frequency processes have shorter cycles. The researchers pointed out that low-frequency processes, such as fluctuations in stream flow and groundwater levels, would not usually be apparent to human populations. In contrast, high-frequency fluctuations such as seasonal temperature variations are observable and somewhat predictable, so that groups could have adapted their behaviors accordingly. When the researchers compared sequences of sociocultural change in the Western Pueblo region with episodes of low- and high-frequency environmental variation, however, they found no simple correlation between environmental process and sociocultural change or persistence. 
+Although early Pueblo peoples did protect themselves against environmental risk and uncertainty, they responded variously on different occasions to similar patterns of high-frequency climatic and environmental change. The researchers identified seven major adaptive responses, including increased mobility, relocation of permanent settlements, changes in subsistence foods, and reliance on trade with other groups. These findings suggest that groups’ adaptive choices depended on cultural and social as well as environmental factors and were flexible strategies rather than uncomplicated reactions to environmental change. Environmental conditions mattered, but they were rarely, if ever, sufficient to account for sociocultural persistence and change. Group size and composition, culture, contact with other groups, and individual choices and actions were — barring catastrophes such as floods or earthquakes — more significant for a population’s survival than were climate and environment.</string>
+		</dict>
+		<dict>
+			<key>exerciseIndex</key>
+			<integer>0</integer>
+			<key>questionIndex</key>
+			<integer>7</integer>
+			<key>type</key>
+			<integer>1</integer>
+			<key>options</key>
+			<array>
+				<string>A. unpredictability of the climate and environment of the southwestern United States</string>
+				<string>B. difficulty of producing a consistent food supply for a large population in the Western Pueblo region</string>
+				<string>C. lack of water and land suitable for cultivation in central Arizona</string>
+				<string>D. local climatic variation in the environment of the southwestern United States</string>
+				<string>E. high-frequency environmental processes at work in the southwestern United States</string>
+			</array>
+			<key>answer</key>
+			<string>D</string>
+			<key>question</key>
+			<string>The fact that “adjacent agricultural fields can produce significantly different yields” (lines 12–13) is offered as evidence of the</string>
+			<key>text</key>
+			<string>Until recently, many anthropologists assumed that the environment of what is now the southwestern United States shaped the social history and culture of the region’s indigenous peoples. Building on this assumption, archaeologists asserted that adverse environmental conditions and droughts were responsible for the disappearances and migrations of southwestern populations from many sites they once inhabited. 
+However, such deterministic arguments fail to acknowledge that local environmental variability in the Southwest makes generalizing about that environment difficult. To examine the relationship between environmental variation and sociocultural change in the Western Pueblo region of central Arizona, which indigenous tribes have occupied continuously for at least 800 years, a research team recently reconstructed the climatic, vegetational, and erosional cycles of past centuries. The researchers found it impossible to provide a single, generally applicable characterization of environmental conditions for the region. Rather, they found that local areas experienced different patterns of rainfall, wind, and erosion, and that such conditions had prevailed in the Southwest for the last 1,400 years. Rainfall, for example, varied within and between local valley systems, so that even adjacent agricultural fields can produce significantly different yields. The researchers characterized episodes of variation in southwestern environments by frequency: low-frequency environmental processes occur in cycles longer than one human generation, which generally is considered to last about 25 years, and high-frequency processes have shorter cycles. The researchers pointed out that low-frequency processes, such as fluctuations in stream flow and groundwater levels, would not usually be apparent to human populations. In contrast, high-frequency fluctuations such as seasonal temperature variations are observable and somewhat predictable, so that groups could have adapted their behaviors accordingly. When the researchers compared sequences of sociocultural change in the Western Pueblo region with episodes of low- and high-frequency environmental variation, however, they found no simple correlation between environmental process and sociocultural change or persistence. 
+Although early Pueblo peoples did protect themselves against environmental risk and uncertainty, they responded variously on different occasions to similar patterns of high-frequency climatic and environmental change. The researchers identified seven major adaptive responses, including increased mobility, relocation of permanent settlements, changes in subsistence foods, and reliance on trade with other groups. These findings suggest that groups’ adaptive choices depended on cultural and social as well as environmental factors and were flexible strategies rather than uncomplicated reactions to environmental change. Environmental conditions mattered, but they were rarely, if ever, sufficient to account for sociocultural persistence and change. Group size and composition, culture, contact with other groups, and individual choices and actions were — barring catastrophes such as floods or earthquakes — more significant for a population’s survival than were climate and environment.</string>
+		</dict>
+		<dict>
+			<key>exerciseIndex</key>
+			<integer>0</integer>
+			<key>questionIndex</key>
+			<integer>8</integer>
+			<key>type</key>
+			<integer>1</integer>
+			<key>options</key>
+			<array>
+				<string>A. Developing watertight jars in which to collect and store water during the rainy season</string>
+				<string>B. Building multistory dwellings in low-lying areas to avoid the flash flooding that occurs each summer</string>
+				<string>C. Moving a village because groundwater levels have changed over the last generation</string>
+				<string>D. Trading with other groups for furs from which to make winter clothes</string>
+				<string>E. Moving one’s herds of grazing animals each year between summer and winter pastures</string>
+			</array>
+			<key>answer</key>
+			<string>C</string>
+			<key>question</key>
+			<string>It can be inferred from the passage that which of the following activities is NOT an example of a population responding to high-frequency environmental processes?</string>
+			<key>text</key>
+			<string>Until recently, many anthropologists assumed that the environment of what is now the southwestern United States shaped the social history and culture of the region’s indigenous peoples. Building on this assumption, archaeologists asserted that adverse environmental conditions and droughts were responsible for the disappearances and migrations of southwestern populations from many sites they once inhabited. 
+However, such deterministic arguments fail to acknowledge that local environmental variability in the Southwest makes generalizing about that environment difficult. To examine the relationship between environmental variation and sociocultural change in the Western Pueblo region of central Arizona, which indigenous tribes have occupied continuously for at least 800 years, a research team recently reconstructed the climatic, vegetational, and erosional cycles of past centuries. The researchers found it impossible to provide a single, generally applicable characterization of environmental conditions for the region. Rather, they found that local areas experienced different patterns of rainfall, wind, and erosion, and that such conditions had prevailed in the Southwest for the last 1,400 years. Rainfall, for example, varied within and between local valley systems, so that even adjacent agricultural fields can produce significantly different yields. The researchers characterized episodes of variation in southwestern environments by frequency: low-frequency environmental processes occur in cycles longer than one human generation, which generally is considered to last about 25 years, and high-frequency processes have shorter cycles. The researchers pointed out that low-frequency processes, such as fluctuations in stream flow and groundwater levels, would not usually be apparent to human populations. In contrast, high-frequency fluctuations such as seasonal temperature variations are observable and somewhat predictable, so that groups could have adapted their behaviors accordingly. When the researchers compared sequences of sociocultural change in the Western Pueblo region with episodes of low- and high-frequency environmental variation, however, they found no simple correlation between environmental process and sociocultural change or persistence. 
+Although early Pueblo peoples did protect themselves against environmental risk and uncertainty, they responded variously on different occasions to similar patterns of high-frequency climatic and environmental change. The researchers identified seven major adaptive responses, including increased mobility, relocation of permanent settlements, changes in subsistence foods, and reliance on trade with other groups. These findings suggest that groups’ adaptive choices depended on cultural and social as well as environmental factors and were flexible strategies rather than uncomplicated reactions to environmental change. Environmental conditions mattered, but they were rarely, if ever, sufficient to account for sociocultural persistence and change. Group size and composition, culture, contact with other groups, and individual choices and actions were — barring catastrophes such as floods or earthquakes — more significant for a population’s survival than were climate and environment.</string>
+		</dict>
+		<dict>
+			<key>exerciseIndex</key>
+			<integer>0</integer>
+			<key>questionIndex</key>
+			<integer>9</integer>
+			<key>type</key>
+			<integer>1</integer>
+			<key>options</key>
+			<array>
+				<string>A. A higher percentage of total agricultural acreage was fallow in the United States than in the Soviet Union.</string>
+				<string>B. The United States had more fallow acreage than planted acreage. </string>
+				<string>C. Fewer total acres of available agricultural land were fallow in the Soviet Union than in the United States.</string>
+				<string>D. The Soviet Union had more planted acreage than fallow acreage. </string>
+				<string>E. The Soviet Union produced a greater volume of crops than the United States produced.</string>
+			</array>
+			<key>answer</key>
+			<string>E</string>
+			<key>question</key>
+			<string>From the information above, which of the following can be most reliably inferred about United States and Soviet agriculture during the ten-year period?</string>
+			<key>text</key>
+			<string>A ten-year comparison between the United States and the Soviet Union in terms of crop yields per acre revealed that when only planted acreage is compared, Soviet yields were equal to 68 percent of United States yields. When total agricultural acreage (planted acreage plus fallow acreage) is compared, however, Soviet yield was 114 percent of United States yield.</string>
+		</dict>
+	</array>
+</array>
+</plist>

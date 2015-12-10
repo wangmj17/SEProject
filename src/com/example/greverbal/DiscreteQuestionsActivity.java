@@ -60,6 +60,7 @@ public class DiscreteQuestionsActivity extends Activity {
 	private String[] explanations;
 	private DiscreteExercise exercise;
 	private DiscreteQuestion question;
+	private Intent intent;
 	
 	@SuppressWarnings("deprecation")
 	@Override
@@ -67,7 +68,7 @@ public class DiscreteQuestionsActivity extends Activity {
         super.onCreate(savedInstanceState);
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_questionsview);
         discreteQuestionsActivity = this;
         
         mainScrollView = (ScrollView) this.findViewById(R.id.MainScrollView);
@@ -91,9 +92,44 @@ public class DiscreteQuestionsActivity extends Activity {
         
         AssetManager assetManager = this.getAssets();
 		
-		QuestionGetter questionGetter = new QuestionGetter(assetManager);
+        intent = getIntent();
+        int activityType = intent.getIntExtra("type", 0);
+        if (activityType == 0){
+        	int exerciseIndex = intent.getIntExtra("exerciseIndex", 0);
+        	QuestionGetter questionGetter = new QuestionGetter(assetManager);
+    		exercise = questionGetter.getDiscreteExercise(exerciseIndex);
+    		questionCount = exercise.questionCount;
+        }
+        else if (activityType == 1){
+        	int category = intent.getIntExtra("category", 0);
+        	QuestionGetter questionGetter = new QuestionGetter(assetManager);
+        	exercise = questionGetter.getDiscreteCategory(category);
+        	questionCount = exercise.questionCount;
+        }
+        else{
+        	int exerciseIndex = intent.getIntExtra("exerciseIndex", 0);
+        	int questionIndex = intent.getIntExtra("questionIndex", 0);
+        	QuestionGetter questionGetter = new QuestionGetter(assetManager);
+    		exercise = questionGetter.getDiscreteExercise(exerciseIndex);
+    		currentIndex = questionIndex;
+    		lastButton.setEnabled(false);
+    		nextButton.setEnabled(false);
+        }
+        
+        Button backButton = questionTabBar.getBackButton();
+    	backButton.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				discreteQuestionsActivity.setResult(RESULT_OK, intent);
+				discreteQuestionsActivity.finish();
+			}
+		});
+    	
+		/*QuestionGetter questionGetter = new QuestionGetter(assetManager);
 		exercise = questionGetter.getDiscreteExercise(0);
-		questionCount = exercise.questionCount;
+		questionCount = exercise.questionCount;*/
 		
 		wordBookHandler = new WordBookHandler(this);
 		noteBookHandler = new NoteBookHandler(this);
@@ -131,7 +167,7 @@ public class DiscreteQuestionsActivity extends Activity {
         	public boolean onPreDraw() {
         		int margin = questionBottomBar.getHeight();
         		questionBottomBar.getViewTreeObserver().removeOnPreDrawListener(this);
-                questionBottomBar.setButtonWidth(margin);
+                questionBottomBar.setButtonWidth(margin,0);
         		return true;
         	}
         });
@@ -223,8 +259,12 @@ public class DiscreteQuestionsActivity extends Activity {
 				}
 				showExplanationButton.setEnabled(false);
 				checkAnswerButton.setEnabled(false);
-				showExplanationButton.setAlpha(0.5f);
-				checkAnswerButton.setAlpha(0.5f);
+				
+				mainScrollView.post(new Runnable() { 
+			        public void run() { 
+			            mainScrollView.fullScroll(ScrollView.FOCUS_DOWN); 
+			        } 
+				});
 			}
 		});
 	}
@@ -232,6 +272,7 @@ public class DiscreteQuestionsActivity extends Activity {
 	private void setQuestion(){
 		
 		answerView.setVisibility(View.GONE);
+		mainScrollView.scrollTo(0, 0);
 		
 		RelativeLayout.LayoutParams lp = (RelativeLayout.LayoutParams) questionTextScrollView.getLayoutParams();
     	lp.height = android.view.ViewGroup.LayoutParams.WRAP_CONTENT;
@@ -277,7 +318,18 @@ public class DiscreteQuestionsActivity extends Activity {
     	lp.addRule(RelativeLayout.BELOW, lastID);
     	lp.setMargins(dip2px(this,5), dip2px(this,10), dip2px(this,5), dip2px(this,10));
     	answerView.setLayoutParams(lp);
-		answerView.setYourAnswerContent("");
+    	String yourAnswer = "";
+    	for (int i = 1; i <= lastID - 250; i++){
+			View v = discreteQuestionsActivity.findViewById(250 + i);
+			if ( v instanceof OptionButtonView){
+				OptionButtonView optionButtonView = (OptionButtonView) v;
+				if (optionButtonView.selected){
+					yourAnswer = yourAnswer + optionButtonView.option_text.charAt(0);
+				}
+			}
+			
+		}
+		answerView.setYourAnswerContent(yourAnswer);
 		answerView.setRightAnswerContent(question.answer);
 		answerView.setAddtoNoteBookImage(this, question.exerciseIndex, question.questionIndex, question.type, noteBookHandler);
 		answerView.setAddtoNoteBookAction(question.exerciseIndex, question.questionIndex, question.type, noteBookHandler);
@@ -309,16 +361,41 @@ public class DiscreteQuestionsActivity extends Activity {
     			lp.setMargins(dip2px(this,10), dip2px(this,10), dip2px(this,10), dip2px(this,5));
         		mainScrollViewLayout.addView(label,lp);
     		}
-    		OptionButtonView optionButtonView= new OptionButtonView(this,attrs,wordBookHandler);
+    		OptionButtonView optionButtonView= new OptionButtonView(this,attrs);
     		optionButtonView.setOptionText(options[i]);
     		optionButtonView.setOptionExplanation(explanations[i]);
     		optionButtonView.setTextSize(14);
-    		optionButtonView.setOptionImage(questionType);
+    		optionButtonView.setOptionImage(questionType != 1);
+    		optionButtonView.setAddtoWordBookButton(wordBookHandler);
     		optionButtonView.setAddtoWordBookImage(this);
     		optionButtonView.setOnClickListener(new View.OnClickListener() {
     	         public void onClick(View v) {
     	        	 OptionButtonView optionButtonView = (OptionButtonView)v;
     	        	 optionButtonView.changeSelectedStatus();
+    	        	 if (optionButtonView.selected){
+    	        		 if (questionType != 1){
+        	        		 for (int i = v.getId() + 1; i <= lastID; i++){
+        	        			 View view = discreteQuestionsActivity.findViewById(i);
+        	        			 if (view instanceof OptionButtonView){
+        	        				optionButtonView = (OptionButtonView) view;
+         	 						if (optionButtonView.selected)
+         	 						optionButtonView.changeSelectedStatus();
+        	        			 }else{
+        	        				break; 
+        	        			 }
+        	        		 }	
+        	        		 for (int i = v.getId() - 1; i > 250; i--){
+        	        			 View view = discreteQuestionsActivity.findViewById(i);
+        	        			 if (view instanceof OptionButtonView){
+        	        				optionButtonView = (OptionButtonView) view;
+         	 						if (optionButtonView.selected)
+         	 						optionButtonView.changeSelectedStatus();
+        	        			 }else{
+        	        				break; 
+        	        			 }
+        	        		 }	
+        	        	 }
+    	        	 }
     	         }
     	     });
     		RelativeLayout.LayoutParams lp =  new RelativeLayout.LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);

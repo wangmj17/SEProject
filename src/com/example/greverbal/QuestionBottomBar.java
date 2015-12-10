@@ -31,17 +31,28 @@ public class QuestionBottomBar extends RelativeLayout {
         
     }
     
-    public void setButtonWidth(int margin){
+    public void setButtonWidth(int margin, int type){
     	WindowManager wm = (WindowManager) getContext()
                 .getSystemService(Context.WINDOW_SERVICE);
         @SuppressWarnings("deprecation")
 		int screenWidth = wm.getDefaultDisplay().getWidth();
-        RelativeLayout.LayoutParams lp=(RelativeLayout.LayoutParams)showExplanationButton.getLayoutParams();
-    	lp.width = screenWidth/2 - margin;
-    	showExplanationButton.setLayoutParams(lp);
-    	lp=(RelativeLayout.LayoutParams)checkAnswerButton.getLayoutParams();
-    	lp.width = screenWidth/2 - margin;
-    	checkAnswerButton.setLayoutParams(lp);
+    	if (type == 0){
+            RelativeLayout.LayoutParams lp=(RelativeLayout.LayoutParams)showExplanationButton.getLayoutParams();
+        	lp.width = screenWidth/2 - margin;
+        	showExplanationButton.setLayoutParams(lp);
+        	lp=(RelativeLayout.LayoutParams)checkAnswerButton.getLayoutParams();
+        	lp.width = screenWidth/2 - margin;
+        	checkAnswerButton.setLayoutParams(lp);
+    	}
+    	else{
+    		RelativeLayout.LayoutParams lp=(RelativeLayout.LayoutParams)showExplanationButton.getLayoutParams();
+        	lp.width = 0;
+        	lp.height = 0;
+        	showExplanationButton.setLayoutParams(lp);
+        	lp=(RelativeLayout.LayoutParams)checkAnswerButton.getLayoutParams();
+        	lp.width = screenWidth - 2 * margin;
+        	checkAnswerButton.setLayoutParams(lp);
+    	}
     }
 	
 	public Button getShowExplanationButton() {

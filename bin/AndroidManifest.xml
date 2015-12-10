@@ -35,6 +35,26 @@
             android:name=".WholeTextActivity"
             >
         </activity>
+        <activity
+            android:name=".ExerciseActivity"
+            >
+        </activity>
+        <activity
+            android:name=".NoteBookActivity"
+            >
+        </activity>
+        <activity
+            android:name=".NoteBookChooseActivity"
+            >
+        </activity>
+        <activity
+            android:name=".ReadingQuestionsActivity"
+            >
+        </activity>
+        <activity
+            android:name=".WordBookActivity"
+            >
+        </activity>
     </application>
 
 </manifest>

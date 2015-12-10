@@ -53,9 +53,8 @@ public class QuestionGetter {
 	
 	public DiscreteExercise getDiscreteCategory(int type){
 		Array exercises = (Array) discretePList.getRootElement();
-		DiscreteExercise exerciseCategory = new DiscreteExercise();
 		
-		ArrayList list = new ArrayList();
+		ArrayList<DiscreteQuestion> list = new ArrayList<DiscreteQuestion>();
 		for (int i = 0; i < exercises.size(); i++){
 			DiscreteExercise exercise = new DiscreteExercise((Array) exercises.get(i));
 			for (int j = 0;j < exercise.questionCount; j++){
@@ -66,9 +65,7 @@ public class QuestionGetter {
 			}
 		}
 		
-		exerciseCategory.questionCount = list.size();
-		exerciseCategory.discreteQuestions = (DiscreteQuestion[]) list.toArray();
-		return exerciseCategory;
+		return new DiscreteExercise(list);
 	}
 	
 	public ReadingExercise getReadingExercise(int exerciseIndex){
@@ -78,9 +75,8 @@ public class QuestionGetter {
 	
 	public ReadingExercise getReadingCategory(int type){
 		Array exercises = (Array) readingPList.getRootElement();
-		ReadingExercise exerciseCategory = new ReadingExercise();
 		
-		ArrayList list = new ArrayList();
+		ArrayList<ReadingQuestion> list = new ArrayList<ReadingQuestion>();
 		for (int i = 0; i < exercises.size(); i++){
 			ReadingExercise exercise = new ReadingExercise((Array) exercises.get(i));
 			for (int j = 0;j < exercise.questionCount; j++){
@@ -91,8 +87,6 @@ public class QuestionGetter {
 			}
 		}
 		
-		exerciseCategory.questionCount = list.size();
-		exerciseCategory.readingQuestions = (ReadingQuestion[]) list.toArray();
-		return exerciseCategory;
+		return new ReadingExercise(list);
 	}
 }

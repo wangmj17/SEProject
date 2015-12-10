@@ -16,24 +16,30 @@ public class OptionButtonView extends RelativeLayout {
 	private TextView optionText;
 	private ImageView optionImage;
 	private Button addtoWordBook;
-	private final WordBookHandler wordBookHandler;
-	private int questionType;
-	private boolean selected;
-	private String option_text;
+	private WordBookHandler wordBookHandler;
+	private boolean isRadio;
+	public boolean selected;
+	public String option_text;
 	private String option_explanation;
 	private boolean explanationShowed = false;  
+	private Context context;
 	
-	public OptionButtonView(final Context context, AttributeSet attrs, final WordBookHandler wordBookHandler) {
+	public OptionButtonView(Context context, AttributeSet attrs) {
 		super(context, attrs);
 		// 导入布局  
         LayoutInflater.from(context).inflate(R.layout.optionbuttonview, this, true);
 		optionText = (TextView) this.findViewById(R.id.OptionText);
 		optionImage = (ImageView) this.findViewById(R.id.OptionImage);
 		addtoWordBook = (Button) this.findViewById(R.id.AddtoWordBook);
-		this.wordBookHandler = wordBookHandler;
-		
 		addtoWordBook.setVisibility(View.GONE);
+		this.context = context;
 		selected = false;
+
+	}
+	
+	public void setAddtoWordBookButton(final WordBookHandler wordBookHandler){
+		
+		this.wordBookHandler = wordBookHandler;
 		
 		addtoWordBook.setOnClickListener(new OnClickListener(){
 
@@ -74,7 +80,6 @@ public class OptionButtonView extends RelativeLayout {
 			}
 			
 		});
-
 	}
 	
 	public void setOptionText(String text){
@@ -108,9 +113,9 @@ public class OptionButtonView extends RelativeLayout {
 		optionText.setTextSize(textSize);
 	}
 	
-	public void setOptionImage(int questionType){
-		this.questionType = questionType;
-		if(questionType == 0){
+	public void setOptionImage(boolean isRadio){
+		this.isRadio = isRadio;
+		if(isRadio){
 			optionImage.setBackgroundResource(R.drawable.radio_button);
 		}
 		else{
@@ -120,7 +125,7 @@ public class OptionButtonView extends RelativeLayout {
 	
 	public void changeSelectedStatus(){
 		selected = !selected;	
-		if (this.questionType == 1){
+		if (isRadio){
 			if (selected){
 				optionImage.setBackgroundResource(R.drawable.radio_button_selected);
 			}

@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<array>
+		<dict>
+			<key>exerciseIndex</key>
+			<integer>0</integer>
+			<key>questionIndex</key>
+			<integer>0</integer>
+			<key>explanations</key>
+			<array>
+				<string>永久地</string>
+				<string>难以察觉地</string>
+				<string>无规律地</string>
+				<string>不稳地</string>
+				<string>持续地</string>
+			</array>
+			<key>options</key>
+			<array>
+				<string>A. permanently</string>
+				<string>B. imperceptibly</string>
+				<string>C. irregularly</string>
+				<string>D. precariously</string>
+				<string>E. relentlessly</string>
+			</array>
+			<key>answer</key>
+			<string>B</string>
+			<key>type</key>
+			<integer>0</integer>
+			<key>text</key>
+			<string> In parts of Arctic, the land grades into the landfast ice so ____ that you can walk off the coast and not know you are over the hidden sea. </string>
+		</dict>
+		<dict>
+			<key>exerciseIndex</key>
+			<integer>0</integer>
+			<key>questionIndex</key>
+			<integer>1</integer>
+			<key>explanations</key>
+			<array>
+				<string>节制</string>
+				<string>恶名</string>
+				<string>著名</string>
+				<string>喧嚣、狂暴的</string>
+				<string>适时、凑巧的</string>
+				<string>客观冷静的</string>
+			</array>
+			<key>options</key>
+			<array>
+				<string>A. temperance</string>
+				<string>B. notoriety</string>
+				<string>C. eminence</string>
+				<string>D. tumultuous</string>
+				<string>E. providential</string>
+				<string>F. dispassionate</string>
+			</array>
+			<key>answer</key>
+			<string>CD</string>
+			<key>type</key>
+			<integer>2</integer>
+			<key>text</key>
+			<string>Vain and prone to violence, Caravaggio could not handle success: the more his (i)____ as an artist increased, the more (ii)____ his life became. </string>
+		</dict>
+		<dict>
+			<key>exerciseIndex</key>
+			<integer>0</integer>
+			<key>questionIndex</key>
+			<integer>2</integer>
+			<key>explanations</key>
+			<array>
+				<string>使蒙上阴影、黯然失色</string>
+				<string>使无效</string>
+				<string>照亮、启发</string>
+				<string>增强</string>
+				<string>掩盖、使费解(make unclear)</string>
+				<string>强调</string>
+				<string>假说的可信度</string>
+				<string>权利的确定性</string>
+				<string>理论的肤浅性</string>
+			</array>
+			<key>options</key>
+			<array>
+				<string>A. overshadowed</string>
+				<string>B. invalidated</string>
+				<string>C. illuminated</string>
+				<string>D. enhance</string>
+				<string>E. obscure</string>
+				<string>F. underscore</string>
+				<string>G. plausibility of our hypotheses</string>
+				<string>H. certainty of our entitlement</string>
+				<string>I. superficiality of our theories</string>
+			</array>
+			<key>answer</key>
+			<string>AEI</string>
+			<key>type</key>
+			<integer>3</integer>
+			<key>text</key>
+			<string>It is refreshing to read a book about our planet by an author who does not allow facts to be (i)____ by politics: well aware of the political disputes about the effects of human activities on climate and biodiversity, this author does not permit them to (ii)____ his comprehensive description of what we know about our biosphere. He emphasizes the enormous gaps in our knowledge, the sparseness of our observations, and the (iii)____, calling attention to the many aspects of planetary evolution that must be better understood before we can accurately diagnose the condition of our planet. </string>
+		</dict>
+		<dict>
+			<key>exerciseIndex</key>
+			<integer>0</integer>
+			<key>questionIndex</key>
+			<integer>3</integer>
+			<key>explanations</key>
+			<array>
+				<string>严谨的</string>
+				<string>大量的，详尽的</string>
+				<string>尊敬的</string>
+				<string>尖刻的</string>
+				<string>尖刻的</string>
+				<string>尖刻的</string>
+			</array>
+			<key>options</key>
+			<array>
+				<string>A. exacting</string>
+				<string>B. copious</string>
+				<string>C. respectful</string>
+				<string>D. acerbic</string>
+				<string>E. scathing</string>
+				<string>F. meticulous</string>
+			</array>
+			<key>answer</key>
+			<string>AF</string>
+			<key>type</key>
+			<integer>1</integer>
+			<key>text</key>
+			<string>Ever a demanding reader of the fiction of others, the novelist Chase was likewise often the object of ____ analyses by his contemporaries. Ever a demanding reader of the fiction of others, the novelist Chase was likewise often the object of ____ analyses by his contemporaries. </string>
+		</dict>
+		<dict>
+			<key>exerciseIndex</key>
+			<integer>0</integer>
+			<key>questionIndex</key>
+			<integer>4</integer>
+			<key>explanations</key>
+			<array>
+				<string>使黯然失色</string>
+				<string>增强</string>
+				<string>降解、恶化</string>
+				<string>不加批判地接受</string>
+				<string>适当地认可</string>
+				<string>激烈地争论</string>
+				<string>互补的</string>
+				<string>内在的，本质的</string>
+				<string>外围的，次要的</string>
+			</array>
+			<key>options</key>
+			<array>
+				<string>A. eclipse</string>
+				<string>B. bolster</string>
+				<string>C. degrade</string>
+				<string>D. uncritically accept</string>
+				<string>E. appropriately acknowledge</string>
+				<string>F. hotly dispute</string>
+				<string>G. complementary</string>
+				<string>H. intrinsic</string>
+				<string>I. peripheral</string>
+			</array>
+			<key>answer</key>
+			<string>BDI</string>
+			<key>type</key>
+			<integer>3</integer>
+			<key>text</key>
+			<string>Managers who think that strong environmental performance will (i)____ their company’s financial performance often (ii)____ claims that systems designed to help them manage environmental concerns are valuable tools. By contrast, managers who perceive environmental performance to be (iii)____ to financial success may view an environmental management system as extraneous. In either situation, and whatever their perceptions, it is a manager’s commitment to achieving environmental improvement rather than the mere presence of a system that determines environmental performance. </string>
+		</dict>
+		<dict>
+			<key>exerciseIndex</key>
+			<integer>0</integer>
+			<key>questionIndex</key>
+			<integer>5</integer>
+			<key>explanations</key>
+			<array>
+				<string>漠不关心的</string>
+				<string>平和的</string>
+				<string>焦虑不安的</string>
+				<string>焦虑不安的</string>
+				<string>平静的</string>
+				<string>大叫大嚷的</string>
+			</array>
+			<key>options</key>
+			<array>
+				<string>A. aloof</string>
+				<string>B. placid</string>
+				<string>C. restive</string>
+				<string>D. skittish</string>
+				<string>E. tranquil</string>
+				<string>F. vociferous</string>
+			</array>
+			<key>answer</key>
+			<string>CD</string>
+			<key>type</key>
+			<integer>1</integer>
+			<key>text</key>
+			<string>The government&apos;s implementation of a new code of ethics appeared intended to shore up the ruling party&apos;s standing with an increasingly ____ electorate at a time when the party is besieged by charges that it trades favors for campaign money. The government&apos;s implementation of a new code of ethics appeared intended to shore up the ruling party&apos;s standing with an increasingly ____ electorate at a time when the party is besieged by charges that it trades favors for campaign money. </string>
+		</dict>
+		<dict>
+			<key>exerciseIndex</key>
+			<integer>0</integer>
+			<key>questionIndex</key>
+			<integer>6</integer>
+			<key>explanations</key>
+			<array>
+				<string>突发奇想、变化无常</string>
+				<string>审美</string>
+				<string>义务、责任</string>
+				<string>方法</string>
+				<string>智力</string>
+			</array>
+			<key>options</key>
+			<array>
+				<string>A. caprice</string>
+				<string>B. aesthetics</string>
+				<string>C. obligation</string>
+				<string>D. methodologies</string>
+				<string>E. intellect</string>
+			</array>
+			<key>answer</key>
+			<string>B</string>
+			<key>type</key>
+			<integer>0</integer>
+			<key>text</key>
+			<string>Mathematicians have a distinctive sense of beauty: they strive to present their ideas and results in a clear and compelling fashion, dictated by ______ as well as by logic. </string>
+		</dict>
+		<dict>
+			<key>exerciseIndex</key>
+			<integer>0</integer>
+			<key>questionIndex</key>
+			<integer>7</integer>
+			<key>explanations</key>
+			<array>
+				<string>侮辱</string>
+				<string>视作要人、捧人</string>
+				<string>边缘化</string>
+				<string>突出</string>
+				<string>超越</string>
+				<string>掩盖</string>
+			</array>
+			<key>options</key>
+			<array>
+				<string>A. stigmatization</string>
+				<string>B. lionization</string>
+				<string>C. marginalization</string>
+				<string>D. foreground</string>
+				<string>E. transcend</string>
+				<string>F. obscure</string>
+			</array>
+			<key>answer</key>
+			<string>BD</string>
+			<key>type</key>
+			<integer>2</integer>
+			<key>text</key>
+			<string>The (i)______ of Vladimir Nabokov as one of North America&apos;s literary giants has thrown the spotlight on his peripheral activities and has thus served to (ii)______ his efforts as an amateur entomologist. </string>
+		</dict>
+		<dict>
+			<key>exerciseIndex</key>
+			<integer>0</integer>
+			<key>questionIndex</key>
+			<integer>8</integer>
+			<key>explanations</key>
+			<array>
+				<string>有预见的</string>
+				<string>正常的</string>
+				<string>乏味单调的</string>
+				<string>虚拟的，实质的</string>
+				<string>典型的</string>
+			</array>
+			<key>options</key>
+			<array>
+				<string>A. prophetic</string>
+				<string>B. normal</string>
+				<string>C. monotonous</string>
+				<string>D. virtual</string>
+				<string>E. typical</string>
+			</array>
+			<key>answer</key>
+			<string>A</string>
+			<key>type</key>
+			<integer>0</integer>
+			<key>text</key>
+			<string>Kagan maintains that an infant&apos;s reactions to its first stressful experiences are part of a natural process of development, not harbingers of childhood unhappiness or ____ signs of adolescent anxiety. </string>
+		</dict>
+		<dict>
+			<key>exerciseIndex</key>
+			<integer>0</integer>
+			<key>questionIndex</key>
+			<integer>9</integer>
+			<key>explanations</key>
+			<array>
+				<string>令人惊讶的</string>
+				<string>可理解的 </string>
+				<string>无关的</string>
+				<string>挑战</string>
+				<string>使正当</string>
+				<string>改变</string>
+			</array>
+			<key>options</key>
+			<array>
+				<string>A. surprising</string>
+				<string>B. understandable</string>
+				<string>C. irrelevant</string>
+				<string>D. challenges</string>
+				<string>E. justifies</string>
+				<string>F. changes</string>
+			</array>
+			<key>answer</key>
+			<string>AW</string>
+			<key>type</key>
+			<integer>2</integer>
+			<key>text</key>
+			<string>It is (i)____ that so many portrait paintings hang in art museums, since the subject matter seems to dictate a status closer to pictures in the family photograph album than to high art. But perhaps it is the artistic skill with which the portraits are painted that (ii)____ their presence in art museums. </string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>questionIndex</key>
+			<integer>0</integer>
+			<key>exerciseIndex</key>
+			<integer>1</integer>
+			<key>explanations</key>
+			<array>
+				<string>正统的</string>
+				<string>古怪的</string>
+				<string>独创的</string>
+				<string>少量的</string>
+				<string>传统的</string>
+				<string>创新的</string>
+			</array>
+			<key>options</key>
+			<array>
+				<string>A. orthodox</string>
+				<string>B. eccentric</string>
+				<string>C. original</string>
+				<string>D. trifling</string>
+				<string>E. conventional</string>
+				<string>F. innovative</string>
+			</array>
+			<key>answer</key>
+			<string>CF</string>
+			<key>type</key>
+			<integer>1</integer>
+			<key>text</key>
+			<string>Although it does contain some pioneering ideas, one would hardly characterize the work as ____. </string>
+		</dict>
+		<dict>
+			<key>questionIndex</key>
+			<integer>1</integer>
+			<key>exerciseIndex</key>
+			<integer>1</integer>
+			<key>explanations</key>
+			<array>
+				<string>不合格的</string>
+				<string>未减弱的</string>
+				<string>悬而未决的</string>
+				<string>未损坏的</string>
+				<string>为解决的</string>
+				<string>不道德的</string>
+			</array>
+			<key>options</key>
+			<array>
+				<string>A. unqualified</string>
+				<string>B. undiminished</string>
+				<string>C. undecided</string>
+				<string>D. undamaged</string>
+				<string>E. unresolved</string>
+				<string>F. unprincipled</string>
+			</array>
+			<key>answer</key>
+			<string>BD</string>
+			<key>type</key>
+			<integer>1</integer>
+			<key>text</key>
+			<string>The judge&apos;s standing in the legal community, though shaken by phony allegations of wrongdoing, emerged, at long last, ____.</string>
+		</dict>
+		<dict>
+			<key>questionIndex</key>
+			<integer>2</integer>
+			<key>exerciseIndex</key>
+			<integer>1</integer>
+			<key>explanations</key>
+			<array>
+				<string>过时的</string>
+				<string>接受的</string>
+				<string>外来的</string>
+				<string>模仿、竞争</string>
+				<string>欣赏</string>
+				<string>疏远</string>
+			</array>
+			<key>options</key>
+			<array>
+				<string>A. anachronistic</string>
+				<string>B. accepted</string>
+				<string>C. exotic</string>
+				<string>D. emulated by</string>
+				<string>E. appreciated by</string>
+				<string>F. alienated from</string>
+			</array>
+			<key>answer</key>
+			<string>AF</string>
+			<key>type</key>
+			<integer>2</integer>
+			<key>text</key>
+			<string>In her later years, Bertha Pappenheim was an apostle of noble but already (i)______ notions, always respected for her integrity, her energy, and her resolve but increasingly out of step and ultimately (ii)______ even her own organization.</string>
+		</dict>
+		<dict>
+			<key>questionIndex</key>
+			<integer>3</integer>
+			<key>exerciseIndex</key>
+			<integer>1</integer>
+			<key>explanations</key>
+			<array>
+				<string>严谨的</string>
+				<string>大量的，详尽的</string>
+				<string>尊敬的</string>
+				<string>尖刻的</string>
+				<string>尖刻的</string>
+				<string>尖刻的</string>
+			</array>
+			<key>options</key>
+			<array>
+				<string>A. exacting</string>
+				<string>B. copious</string>
+				<string>C. respectful</string>
+				<string>D. acerbic</string>
+				<string>E. scathing</string>
+				<string>F. meticulous</string>
+			</array>
+			<key>answer</key>
+			<string>AF</string>
+			<key>type</key>
+			<integer>1</integer>
+			<key>text</key>
+			<string>Ever a demanding reader of the fiction of others, the novelist Chase was likewise often the object of ____ analyses by his contemporaries. Ever a demanding reader of the fiction of others, the novelist Chase was likewise often the object of ____ analyses by his contemporaries. </string>
+		</dict>
+		<dict>
+			<key>questionIndex</key>
+			<integer>4</integer>
+			<key>exerciseIndex</key>
+			<integer>1</integer>
+			<key>explanations</key>
+			<array>
+				<string>获得</string>
+				<string>沉思</string>
+				<string>脱离</string>
+				<string>本质无关的</string>
+				<string>神秘，无法理解的</string>
+				<string>完全平淡无奇的</string>
+				<string>最平庸的</string>
+				<string>陈腐的</string>
+				<string>耳目一新的</string>
+			</array>
+			<key>options</key>
+			<array>
+				<string>A. attainment of</string>
+				<string>B. rumination on</string>
+				<string>C. detachment from</string>
+				<string>D. essentially irrelevant</string>
+				<string>E. utterly mysterious</string>
+				<string>F. thoroughly commonplace</string>
+				<string>G. most prosaic</string>
+				<string>H. somewhat hackneyed</string>
+				<string>I. refreshingly novel</string>
+			</array>
+			<key>answer</key>
+			<string>BEG</string>
+			<key>type</key>
+			<integer>3</integer>
+			<key>text</key>
+			<string>Philosophy, unlike most other subjects, does not try to extend our knowledge by discovering new information about the world. Instead it tries to deepen our understanding through (i)____ what is already closest to us—the experiences, thoughts, concepts, and activities that make up our lives but that ordinarily escape our notice precisely because they are so familiar. Philosophy begins by finding (ii)____ the things that are (iii)____.</string>
+		</dict>
+		<dict>
+			<key>exerciseIndex</key>
+			<integer>1</integer>
+			<key>questionIndex</key>
+			<integer>5</integer>
+			<key>explanations</key>
+			<array>
+				<string>模仿</string>
+				<string>反应</string>
+				<string>教条主义</string>
+				<string>发明创造</string>
+				<string>小心、警告</string>
+			</array>
+			<key>options</key>
+			<array>
+				<string>A. imitation</string>
+				<string>B. reaction</string>
+				<string>C. dogmatism</string>
+				<string>D. invention</string>
+				<string>E. caution</string>
+			</array>
+			<key>answer</key>
+			<string>D</string>
+			<key>type</key>
+			<integer>0</integer>
+			<key>text</key>
+			<string>The reception given to Kimura&apos;s radical theory of molecular evolution shows that when ______ fights orthodoxy to a draw, then novelty has seized a good chunk of space from convention. </string>
+		</dict>
+		<dict>
+			<key>questionIndex</key>
+			<integer>6</integer>
+			<key>exerciseIndex</key>
+			<integer>1</integer>
+			<key>explanations</key>
+			<array>
+				<string>突发奇想、变化无常</string>
+				<string>审美</string>
+				<string>义务、责任</string>
+				<string>方法</string>
+				<string>智力</string>
+			</array>
+			<key>options</key>
+			<array>
+				<string>A. caprice</string>
+				<string>B. aesthetics</string>
+				<string>C. obligation</string>
+				<string>D. methodologies</string>
+				<string>E. intellect</string>
+			</array>
+			<key>answer</key>
+			<string>B</string>
+			<key>type</key>
+			<integer>0</integer>
+			<key>text</key>
+			<string>Mathematicians have a distinctive sense of beauty: they strive to present their ideas and results in a clear and compelling fashion, dictated by ______ as well as by logic. </string>
+		</dict>
+		<dict>
+			<key>questionIndex</key>
+			<integer>7</integer>
+			<key>exerciseIndex</key>
+			<integer>1</integer>
+			<key>explanations</key>
+			<array>
+				<string>侮辱</string>
+				<string>视作要人、捧人</string>
+				<string>边缘化</string>
+				<string>突出</string>
+				<string>超越</string>
+				<string>掩盖</string>
+			</array>
+			<key>options</key>
+			<array>
+				<string>A. stigmatization</string>
+				<string>B. lionization</string>
+				<string>C. marginalization</string>
+				<string>D. foreground</string>
+				<string>E. transcend</string>
+				<string>F. obscure</string>
+			</array>
+			<key>answer</key>
+			<string>BD</string>
+			<key>type</key>
+			<integer>2</integer>
+			<key>text</key>
+			<string>The (i)______ of Vladimir Nabokov as one of North America&apos;s literary giants has thrown the spotlight on his peripheral activities and has thus served to (ii)______ his efforts as an amateur entomologist. </string>
+		</dict>
+		<dict>
+			<key>questionIndex</key>
+			<integer>8</integer>
+			<key>exerciseIndex</key>
+			<integer>1</integer>
+			<key>explanations</key>
+			<array>
+				<string>有预见的</string>
+				<string>正常的</string>
+				<string>乏味单调的</string>
+				<string>虚拟的，实质的</string>
+				<string>典型的</string>
+			</array>
+			<key>options</key>
+			<array>
+				<string>A. prophetic</string>
+				<string>B. normal</string>
+				<string>C. monotonous</string>
+				<string>D. virtual</string>
+				<string>E. typical</string>
+			</array>
+			<key>answer</key>
+			<string>A</string>
+			<key>type</key>
+			<integer>0</integer>
+			<key>text</key>
+			<string>Kagan maintains that an infant&apos;s reactions to its first stressful experiences are part of a natural process of development, not harbingers of childhood unhappiness or ____ signs of adolescent anxiety. </string>
+		</dict>
+		<dict>
+			<key>questionIndex</key>
+			<integer>9</integer>
+			<key>exerciseIndex</key>
+			<integer>1</integer>
+			<key>explanations</key>
+			<array>
+				<string>令人惊讶的</string>
+				<string>可理解的 </string>
+				<string>无关的</string>
+				<string>挑战</string>
+				<string>使正当</string>
+				<string>改变</string>
+			</array>
+			<key>options</key>
+			<array>
+				<string>A. surprising</string>
+				<string>B. understandable</string>
+				<string>C. irrelevant</string>
+				<string>D. challenges</string>
+				<string>E. justifies</string>
+				<string>F. changes</string>
+			</array>
+			<key>answer</key>
+			<string>AW</string>
+			<key>type</key>
+			<integer>2</integer>
+			<key>text</key>
+			<string>It is (i)____ that so many portrait paintings hang in art museums, since the subject matter seems to dictate a status closer to pictures in the family photograph album than to high art. But perhaps it is the artistic skill with which the portraits are painted that (ii)____ their presence in art museums. </string>
+		</dict>
+	</array>
+</array>
+</plist>
