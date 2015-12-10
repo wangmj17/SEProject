@@ -15,6 +15,77 @@ public class CategoryActivity extends Activity {
 		this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		setContentView(R.layout.activity_category);
+findViewById(R.id.Category1).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(CategoryActivity.this, ReadingQuestionsActivity.class);
+                intent.putExtra("type", 1);
+                intent.putExtra("category", 0);
+                startActivityForResult(intent, 0);
+            }
+        });
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(CategoryActivity.this,ReadingQuestionsActivity.class);
+                intent.putExtra("type", 1);
+                intent.putExtra("category", 1);
+                startActivityForResult(intent, 0);
+            }
+        });
+        findViewById(R.id.Category3).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(CategoryActivity.this,ReadingQuestionsActivity.class);
+                intent.putExtra("type", 1);
+                intent.putExtra("category", 2);
+                startActivityForResult(intent, 0);
+            }
+        });
+        findViewById(R.id.Category4).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(CategoryActivity.this,ReadingQuestionsActivity.class);
+                intent.putExtra("type", 1);
+                intent.putExtra("category", 3);
+                startActivityForResult(intent, 0);
+            }
+        });
+        findViewById(R.id.Category5).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(CategoryActivity.this,DiscreteQuestionsActivity.class);
+                intent.putExtra("type", 1);
+                intent.putExtra("category", 0);
+                startActivityForResult(intent, 0);
+            }
+        });
+        findViewById(R.id.Category6).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(CategoryActivity.this,DiscreteQuestionsActivity.class);
+                intent.putExtra("type", 1);
+                intent.putExtra("category", 1);
+                startActivityForResult(intent, 0);
+            }
+        });
+        findViewById(R.id.Category7).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(CategoryActivity.this,DiscreteQuestionsActivity.class);
+                intent.putExtra("type", 1);
+                intent.putExtra("category", 2);
+                startActivityForResult(intent, 0);
+            }
+        });
+        findViewById(R.id.Category8).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(CategoryActivity.this,DiscreteQuestionsActivity.class);
+                intent.putExtra("type", 1);
+                intent.putExtra("category", 3);
+                startActivityForResult(intent, 0);
+            }
+        });
 	}
 
 	@Override
