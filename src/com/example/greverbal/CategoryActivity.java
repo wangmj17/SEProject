@@ -24,6 +24,7 @@ findViewById(R.id.Category1).setOnClickListener(new View.OnClickListener() {
                 startActivityForResult(intent, 0);
             }
         });
+        findViewById(R.id.Category2).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(CategoryActivity.this,ReadingQuestionsActivity.class);
