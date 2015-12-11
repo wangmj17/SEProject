@@ -300,7 +300,7 @@ public class ReadingQuestionsActivity extends Activity {
 		answerView.setYourAnswerContent(yourAnswer);
 		answerView.setRightAnswerContent(question.answer);
 		answerView.setAddtoNoteBookImage(this, question.exerciseIndex, question.questionIndex, question.type, noteBookHandler);
-		answerView.setAddtoNoteBookAction(question.exerciseIndex, question.questionIndex, question.type, noteBookHandler);
+		answerView.setAddtoNoteBookAction(question.exerciseIndex, question.questionIndex, question.type+4, noteBookHandler);
 		
 	}
 	

@@ -36,7 +36,7 @@ public class NoteBookActivity extends Activity {
             public void onClick(View v) { 
             	Intent intent = new Intent();
             	intent.setClass(NoteBookActivity.this,NoteBookChooseActivity.class);
-            	intent.putExtra("type",0);
+            	intent.putExtra("type",4);
             	startActivityForResult(intent,0);
             }   
         }); 
@@ -46,10 +46,9 @@ public class NoteBookActivity extends Activity {
     	Log.v("asd", "asdaasd");
     	button2.button.setOnClickListener(new View.OnClickListener() {   
             public void onClick(View v) {
-            	Log.v("asd", "asdaasd");
             	Intent intent = new Intent();
             	intent.setClass(NoteBookActivity.this,NoteBookChooseActivity.class);
-            	intent.putExtra("type",1);
+            	intent.putExtra("type",5);
             	startActivityForResult(intent,0);
             }   
         }); 
@@ -60,7 +59,7 @@ public class NoteBookActivity extends Activity {
             public void onClick(View v) { 
             	Intent intent = new Intent();
             	intent.setClass(NoteBookActivity.this,NoteBookChooseActivity.class);
-            	intent.putExtra("type",2);
+            	intent.putExtra("type",6);
             	startActivityForResult(intent,0);
             }   
         }); 
@@ -72,7 +71,7 @@ public class NoteBookActivity extends Activity {
             public void onClick(View v) { 
             	Intent intent = new Intent();
             	intent.setClass(NoteBookActivity.this,NoteBookChooseActivity.class);
-            	intent.putExtra("type",3);
+            	intent.putExtra("type",7);
             	startActivityForResult(intent,0);
             }   
         }); 
@@ -83,7 +82,7 @@ public class NoteBookActivity extends Activity {
             public void onClick(View v) { 
             	Intent intent = new Intent();
             	intent.setClass(NoteBookActivity.this,NoteBookChooseActivity.class);
-            	intent.putExtra("type",4);
+            	intent.putExtra("type",0);
             	startActivityForResult(intent,0);
             }   
         }); 
@@ -94,7 +93,7 @@ public class NoteBookActivity extends Activity {
             public void onClick(View v) { 
             	Intent intent = new Intent();
             	intent.setClass(NoteBookActivity.this,NoteBookChooseActivity.class);
-            	intent.putExtra("type",5);
+            	intent.putExtra("type",1);
             	startActivityForResult(intent,0);
             }   
         }); 
@@ -105,7 +104,7 @@ public class NoteBookActivity extends Activity {
             public void onClick(View v) { 
             	Intent intent = new Intent();
             	intent.setClass(NoteBookActivity.this,NoteBookChooseActivity.class);
-            	intent.putExtra("type",6);
+            	intent.putExtra("type",2);
             	startActivityForResult(intent,0);
             }   
         }); 
@@ -116,7 +115,7 @@ public class NoteBookActivity extends Activity {
             public void onClick(View v) { 
             	Intent intent = new Intent();
             	intent.setClass(NoteBookActivity.this,NoteBookChooseActivity.class);
-            	intent.putExtra("type",7);
+            	intent.putExtra("type",3);
             	startActivityForResult(intent,0);
             }   
         }); 

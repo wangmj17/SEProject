@@ -77,12 +77,12 @@ public class NoteBookListItem extends BaseAdapter{
         }  
         //绑定数据  
         
+        listitem.questionnum.setText("☆");
         String index[]=((String)data.get(position).get("qusetionIndex")).split(",");
         exerciseIndex=Integer.parseInt(index[1]);
         questionIndex=Integer.parseInt(index[2]);
         category=Integer.parseInt(index[0]);
-        listitem.questionnum.setText("☆");
-        listitem.questiontext.setText((String)data.get(position).get("questiontext"));  
+        listitem.questiontext.setText((String)data.get(position).get("qusetionIndex")); //(String)data.get(position).get("questiontext")
         listitem.delete.setOnClickListener(new View.OnClickListener() {   
             @Override  
             public void onClick(View v) {   
@@ -90,15 +90,22 @@ public class NoteBookListItem extends BaseAdapter{
                 noteBookHandler.deleteQuestion(exerciseIndex, questionIndex, category);
                 th.notifyDataSetChanged();
             }   
-        });   
+        });  
         listitem.test.setOnClickListener(new View.OnClickListener() {   
             @Override  
             public void onClick(View v) {   
             	Intent intent = new Intent();
-            	intent.setClass(notebookchooseactivity,DiscreteQuestionsActivity.class);
-            	intent.putExtra("type",2);
-            	intent.putExtra("exerciseIndex",exerciseIndex);
-            	intent.putExtra("questionIndex",questionIndex);
+            	if(category<4){
+	            	intent.setClass(notebookchooseactivity,DiscreteQuestionsActivity.class);
+	            	intent.putExtra("type",2);
+	            	intent.putExtra("exerciseIndex",exerciseIndex);
+	            	intent.putExtra("questionIndex",questionIndex);}
+            	else{
+                	intent.setClass(notebookchooseactivity,ReadingQuestionsActivity.class);
+                	intent.putExtra("type",2);
+                	intent.putExtra("exerciseIndex",exerciseIndex);
+                	intent.putExtra("questionIndex",questionIndex);
+                	}
             	notebookchooseactivity.startActivityForResult(intent,0);
             }   
         });   

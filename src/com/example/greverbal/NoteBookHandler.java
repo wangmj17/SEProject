@@ -5,6 +5,7 @@ import java.util.List;
 import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.util.Log;
 
 public class NoteBookHandler {
 	private SharedPreferences userHistory;
@@ -19,6 +20,8 @@ public class NoteBookHandler {
 		wrongQuestions = userHistory.getString("wrongQuestions", "");
 		
 		questionList = new ArrayList<Integer[]>();
+		
+		
 	}
 		
 	public void addQuestion(int exerciseIndex, int questionIndex, int category){
@@ -55,15 +58,16 @@ public class NoteBookHandler {
 		editor.commit(); 
 	}
 	
-	public List<Integer[]> findCategory(int category){ //$$$$$$$$$$$$$
+	public List<Integer[]> findCategory(int category){ 
 		questionList.clear();
 		String[] questionArray = wrongQuestions.split(",");
+		//Log.v("yym",wrongQuestions );
 		for (int i = 0; i < questionArray.length - 1; i += 3){
 			if (questionArray[i + 2].equals(String.valueOf(category))){
 				Integer[] info=new Integer[2];
 				info[0]=Integer.parseInt(questionArray[i]);//exerciseIndex
 				info[1]=Integer.parseInt(questionArray[i+1]);//questionIndex
-				questionList.add(info);
+				questionList.add(info); 
 			}
 		}
 		return questionList;
