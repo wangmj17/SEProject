@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    	android:layout_height="wrap_content"
+        android:layout_width="fill_parent" 
+        android:background="#00000000"   
+        >  
+               
+            <ImageView 
+                android:layout_width="30dip"
+            	android:layout_height="30dip"
+            	android:layout_centerVertical="true"
+            	android:layout_marginLeft="2dip"
+            	android:layout_marginRight="2dip"
+            	android:id="@+id/OptionImage"
+            	/>
+            <Button
+                android:id="@+id/bt"
+    			android:layout_marginTop="4dp"
+  			    android:layout_width="fill_parent"
+			  	android:layout_height="wrap_content"
+				android:layout_toRightOf="@+id/OptionImage"
+                />
+             
+            
+    
+</RelativeLayout>  
