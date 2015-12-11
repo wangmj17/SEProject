@@ -25,6 +25,12 @@ public class MainActivity extends Activity{
                 startActivityForResult(new Intent(MainActivity.this,CategoryActivity.class),0);
             }
         });
+        findViewById(R.id.btnWordBookbutton).setOnClickListener(new View.OnClickListener() {//by yym
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,NoteBookActivity.class));
+            }
+        });
     }
 
     @Override

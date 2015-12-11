@@ -30,4 +30,61 @@
 		<nature>com.android.ide.eclipse.adt.AndroidNature</nature>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>_eclipse hacked package_hack test workspace_.metadata_dpryer_GREVerbal_currentCode_gen_com_example_greverbal_BuildConfig.java</name>
+			<type>1</type>
+			<location>E:/eclipse hacked package/hack test workspace/.metadata/dpryer/GREVerbal/currentCode/gen/com/example/greverbal/BuildConfig.java</location>
+		</link>
+		<link>
+			<name>_eclipse hacked package_hack test workspace_.metadata_dpryer_GREVerbal_currentCode_gen_com_example_greverbal_R.java</name>
+			<type>1</type>
+			<location>E:/eclipse hacked package/hack test workspace/.metadata/dpryer/GREVerbal/currentCode/gen/com/example/greverbal/R.java</location>
+		</link>
+		<link>
+			<name>_eclipse hacked package_hack test workspace_.metadata_dpryer_GREVerbal_currentCode_src_com_example_greverbal_AnswerView.java</name>
+			<type>1</type>
+			<location>E:/eclipse hacked package/hack test workspace/.metadata/dpryer/GREVerbal/currentCode/src/com/example/greverbal/AnswerView.java</location>
+		</link>
+		<link>
+			<name>_eclipse hacked package_hack test workspace_.metadata_dpryer_GREVerbal_currentCode_src_com_example_greverbal_CategoryActivity.java</name>
+			<type>1</type>
+			<location>E:/eclipse hacked package/hack test workspace/.metadata/dpryer/GREVerbal/currentCode/src/com/example/greverbal/CategoryActivity.java</location>
+		</link>
+		<link>
+			<name>_eclipse hacked package_hack test workspace_.metadata_dpryer_GREVerbal_currentCode_src_com_example_greverbal_DiscreteExercise.java</name>
+			<type>1</type>
+			<location>E:/eclipse hacked package/hack test workspace/.metadata/dpryer/GREVerbal/currentCode/src/com/example/greverbal/DiscreteExercise.java</location>
+		</link>
+		<link>
+			<name>_eclipse hacked package_hack test workspace_.metadata_dpryer_GREVerbal_currentCode_src_com_example_greverbal_DiscreteQuestion.java</name>
+			<type>1</type>
+			<location>E:/eclipse hacked package/hack test workspace/.metadata/dpryer/GREVerbal/currentCode/src/com/example/greverbal/DiscreteQuestion.java</location>
+		</link>
+		<link>
+			<name>_eclipse hacked package_hack test workspace_.metadata_dpryer_GREVerbal_currentCode_src_com_example_greverbal_DiscreteQuestionsActivity.java</name>
+			<type>1</type>
+			<location>E:/eclipse hacked package/hack test workspace/.metadata/dpryer/GREVerbal/currentCode/src/com/example/greverbal/DiscreteQuestionsActivity.java</location>
+		</link>
+		<link>
+			<name>_eclipse hacked package_hack test workspace_.metadata_dpryer_GREVerbal_currentCode_src_com_example_greverbal_ExerciseActivity.java</name>
+			<type>1</type>
+			<location>E:/eclipse hacked package/hack test workspace/.metadata/dpryer/GREVerbal/currentCode/src/com/example/greverbal/ExerciseActivity.java</location>
+		</link>
+		<link>
+			<name>_eclipse hacked package_hack test workspace_.metadata_dpryer_GREVerbal_currentCode_src_com_example_greverbal_MainActivity.java</name>
+			<type>1</type>
+			<location>E:/eclipse hacked package/hack test workspace/.metadata/dpryer/GREVerbal/currentCode/src/com/example/greverbal/MainActivity.java</location>
+		</link>
+		<link>
+			<name>_eclipse hacked package_hack test workspace_.metadata_dpryer_GREVerbal_currentCode_src_com_example_greverbal_NoteBook.java</name>
+			<type>1</type>
+			<location>E:/eclipse hacked package/hack test workspace/.metadata/dpryer/GREVerbal/currentCode/src/com/example/greverbal/NoteBook.java</location>
+		</link>
+		<link>
+			<name>_eclipse hacked package_hack test workspace_.metadata_dpryer_GREVerbal_currentCode_src_com_example_greverbal_NoteBookActivity.java</name>
+			<type>1</type>
+			<location>E:/eclipse hacked package/hack test workspace/.metadata/dpryer/GREVerbal/currentCode/src/com/example/greverbal/NoteBookActivity.java</location>
+		</link>
+	</linkedResources>
 </projectDescription>
