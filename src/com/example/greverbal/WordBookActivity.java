@@ -1,37 +1,58 @@
 package com.example.greverbal;
 
-import android.app.Activity;
+import java.util.ArrayList;
+import java.util.List;
+ 
+import android.app.ExpandableListActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.Window;
-import android.view.WindowManager;
+import android.util.Log;
+import android.view.Window;  
+import android.widget.Button;; 
+public class WordBookActivity extends ExpandableListActivity{
+	private ContactsInfoAdapter adapter=new ContactsInfoAdapter(this);
+	List<String>group;
+	List<List<String>> child;
+	Button back;
+	Button delete;
+	private WordBookHandler wbh;
+	private WordBook wb;
+	public void onCreate(Bundle savedInstanceState){
+		super.onCreate(savedInstanceState);
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
+		setContentView(R.layout.word_list_tool); 
+		WordBookHandler wbh = new WordBookHandler(this);
+		Log.v("asf", "sucess");
+				wb = wbh.getWordBook();  
 
-public class WordBookActivity extends Activity {
-	@Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        
-    }
+		        initializeData();  
+		        getExpandableListView().setAdapter(adapter);  
+		        getExpandableListView().setCacheColorHint(0); 
+		    }  
+	private void initializeData(){  
+		        group = new ArrayList<String>();  
+		        child = new ArrayList<List<String>>();  
+		        back=(Button) this.findViewById(R.id.WordListBack);
+		        delete=(Button)this.findViewById(R.id.WordListDelete);	
+		        int i=wb.wordList.size();
+		        for (int j=0;j<i;j++){
+		        	addInfo(wb.wordList.get(j),new String[]{wb.explanationList.get(j)});
+		        }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
-        return true;
-    }
+		            }		      
+	public Button getBackButton() {
+		return back;
+	}
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-        if (id == R.id.action_settings) {
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }
-}
+	public void setBackButton(Button backButton) {
+		this.back = backButton;
+	}
+	private void addInfo(String g,String[] c){  
+		        group.add(g);  
+		        List<String> childitem = new ArrayList<String>();  
+		        for(int i=0;i<c.length;i++){  
+		            childitem.add(c[i]);  
+		        }  
+		        child.add(childitem);  
+		    } 
+
+		      }  
