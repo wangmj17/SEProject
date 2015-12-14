@@ -7,7 +7,8 @@ import android.app.ExpandableListActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Window;  
-import android.widget.Button;; 
+import android.widget.Button;
+
 public class WordBookActivity extends ExpandableListActivity{
 	private ContactsInfoAdapter adapter=new ContactsInfoAdapter(this);
 	List<String>group;

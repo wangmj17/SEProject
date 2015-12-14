@@ -290,7 +290,7 @@ public class DiscreteQuestionsActivity extends Activity {
         });
         
 		question = exercise.discreteQuestions[currentIndex];
-		
+		questionTabBar.setTextViewText("测试: " + (question.exerciseIndex + 1) + " 题目: " + (question.questionIndex + 1));
         questionType =  question.type;
         numOfOptions = question.numOfOptions;
         questionTextScrollView.setText(question.text);

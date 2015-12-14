@@ -47,7 +47,7 @@ public final class R {
         public static final int wuxuanyi=0x7f020016;
     }
     public static final class id {
-        public static final int AddToWordBookTitle=0x7f08003f;
+        public static final int AddToWordBookTitle=0x7f080041;
         public static final int AddtoNoteBook=0x7f08002b;
         public static final int AddtoWordBook=0x7f080035;
         public static final int AnswerView=0x7f080013;
@@ -63,7 +63,7 @@ public final class R {
         public static final int CheckAnswer=0x7f080039;
         public static final int DoubleClickText=0x7f08003c;
         public static final int DoubliClickHideText=0x7f080025;
-        public static final int ExplanationEditText=0x7f080041;
+        public static final int ExplanationEditText=0x7f080043;
         public static final int HideButton=0x7f080026;
         public static final int LastButton=0x7f080036;
         public static final int MainScrollView=0x7f080010;
@@ -86,11 +86,13 @@ public final class R {
         public static final int TableLayout=0x7f08001b;
         public static final int TextScrollView=0x7f08003d;
         public static final int WholeText=0x7f080027;
-        public static final int WordBookCancelButton=0x7f080043;
-        public static final int WordBookConfirmButton=0x7f080042;
-        public static final int WordEditText=0x7f080040;
+        public static final int WordBookCancelButton=0x7f080045;
+        public static final int WordBookConfirmButton=0x7f080044;
+        public static final int WordEditText=0x7f080042;
+        public static final int WordListBack=0x7f08003f;
+        public static final int WordListDelete=0x7f080040;
         public static final int YourAnswer=0x7f080029;
-        public static final int action_settings=0x7f080044;
+        public static final int action_settings=0x7f080046;
         public static final int bt=0x7f08002d;
         public static final int btnCategorybutton=0x7f080016;
         public static final int btnExercisebutton=0x7f080017;
@@ -132,7 +134,8 @@ public final class R {
         public static final int questionbottombar=0x7f03000b;
         public static final int questiontabbar=0x7f03000c;
         public static final int questiontextscrollview=0x7f03000d;
-        public static final int wordbookdialog_view=0x7f03000e;
+        public static final int word_list_tool=0x7f03000e;
+        public static final int wordbookdialog_view=0x7f03000f;
     }
     public static final class menu {
         public static final int main=0x7f070000;
