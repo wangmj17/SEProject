@@ -299,12 +299,9 @@ public class ReadingQuestionsActivity extends Activity {
 		}
 		answerView.setYourAnswerContent(yourAnswer);
 		answerView.setRightAnswerContent(question.answer);
-		answerView.setAddtoNoteBookImage(this, question.exerciseIndex, question.questionIndex, question.type, noteBookHandler);
-<<<<<<< HEAD
-		answerView.setAddtoNoteBookAction(question.exerciseIndex, question.questionIndex, question.type+4, noteBookHandler);
-=======
+		answerView.setAddtoNoteBookImage(this, question.exerciseIndex, question.questionIndex, question.type + 4, noteBookHandler);
 		answerView.setAddtoNoteBookAction(question.exerciseIndex, question.questionIndex, question.type + 4, noteBookHandler);
->>>>>>> c2a0bac31071256fa03ebd4ac60a9169bd17e5f0
+
 		
 	}
 	
