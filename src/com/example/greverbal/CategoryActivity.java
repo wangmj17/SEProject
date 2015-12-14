@@ -17,7 +17,30 @@ public class CategoryActivity extends Activity {
 		this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		setContentView(R.layout.activity_category);
-		findViewById(R.id.Category1).setOnClickListener(new View.OnClickListener() {
+
+
+
+	View bcat11 = findViewById(R.id.Category11);//找到你要设透明背景的layout 的id
+        bcat11.getBackground().setAlpha(75);//0~255透明度值 ，0为完全透明，255为不透明
+        View bcat12 = findViewById(R.id.Category12);//找到你要设透明背景的layout 的id
+        bcat12.getBackground().setAlpha(75);//0~255透明度值 ，0为完全透明，255为不透明
+        View bcat13 = findViewById(R.id.Category13);//找到你要设透明背景的layout 的id
+        bcat13.getBackground().setAlpha(75);//0~255透明度值 ，0为完全透明，255为不透明
+        View bcat14 = findViewById(R.id.Category14);//找到你要设透明背景的layout 的id
+        bcat14.getBackground().setAlpha(75);//0~255透明度值 ，0为完全透明，255为不透明
+        View bcat15 = findViewById(R.id.Category15);//找到你要设透明背景的layout 的id
+        bcat15.getBackground().setAlpha(75);//0~255透明度值 ，0为完全透明，255为不透明
+        View bcat16 = findViewById(R.id.Category16);//找到你要设透明背景的layout 的id
+        bcat16.getBackground().setAlpha(75);//0~255透明度值 ，0为完全透明，255为不透明
+        View bcat17 = findViewById(R.id.Category17);//找到你要设透明背景的layout 的id
+        bcat17.getBackground().setAlpha(75);//0~255透明度值 ，0为完全透明，255为不透明
+        View bcat18 = findViewById(R.id.Category18);//找到你要设透明背景的layout 的id
+        bcat18.getBackground().setAlpha(75);//0~255透明度值 ，0为完全透明，255为不透明
+
+
+
+
+		findViewById(R.id.Category11).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(CategoryActivity.this, ReadingQuestionsActivity.class);
@@ -26,7 +49,7 @@ public class CategoryActivity extends Activity {
                 startActivityForResult(intent, 0);
             }
         });
-        findViewById(R.id.Category2).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.Category12).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(CategoryActivity.this,ReadingQuestionsActivity.class);
@@ -35,7 +58,7 @@ public class CategoryActivity extends Activity {
                 startActivityForResult(intent, 0);
             }
         });
-        findViewById(R.id.Category3).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.Category13).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(CategoryActivity.this,ReadingQuestionsActivity.class);
@@ -44,7 +67,7 @@ public class CategoryActivity extends Activity {
                 startActivityForResult(intent, 0);
             }
         });
-        findViewById(R.id.Category4).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.Category14).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(CategoryActivity.this,ReadingQuestionsActivity.class);
@@ -53,7 +76,7 @@ public class CategoryActivity extends Activity {
                 startActivityForResult(intent, 0);
             }
         });
-        findViewById(R.id.Category5).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.Category15).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(CategoryActivity.this,DiscreteQuestionsActivity.class);
@@ -62,7 +85,7 @@ public class CategoryActivity extends Activity {
                 startActivityForResult(intent, 0);
             }
         });
-        findViewById(R.id.Category6).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.Category16).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(CategoryActivity.this,DiscreteQuestionsActivity.class);
@@ -71,7 +94,7 @@ public class CategoryActivity extends Activity {
                 startActivityForResult(intent, 0);
             }
         });
-        findViewById(R.id.Category7).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.Category17).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(CategoryActivity.this,DiscreteQuestionsActivity.class);
@@ -80,7 +103,7 @@ public class CategoryActivity extends Activity {
                 startActivityForResult(intent, 0);
             }
         });
-        findViewById(R.id.Category8).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.Category18).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(CategoryActivity.this,DiscreteQuestionsActivity.class);
