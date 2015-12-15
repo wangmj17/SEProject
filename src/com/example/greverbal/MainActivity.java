@@ -31,6 +31,12 @@ public class MainActivity extends Activity{
                 startActivity(new Intent(MainActivity.this,NoteBookActivity.class));
             }
         });
+        findViewById(R.id.btnExercisebutton).setOnClickListener(new View.OnClickListener() {//by liulg
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,ExerciseActivity.class));       
+            }
+        });
     }
 
     @Override
