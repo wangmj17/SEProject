@@ -11,27 +11,29 @@ import android.view.Window;
 import android.view.WindowManager;
 
 public class NoteBookActivity extends Activity {
+	private NoteBookActivity noteBookActivity;
 	@Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_notebook);
+        noteBookActivity = this;
 		setOptions();
     }
 	public void setOptions(){
+		
+		final Intent intent = getIntent();
 		QuestionTabBar qtb= (QuestionTabBar) this.findViewById(R.id.QuestionTabBar);//$$$$$$
         qtb.getBackButton().setOnClickListener(new View.OnClickListener() {   //$$$$$$
             public void onClick(View v) { 
-            	Intent intent = new Intent();
-            	intent.setClass(NoteBookActivity.this,MainActivity.class);
-            	startActivityForResult(intent,0);
+            	noteBookActivity.setResult(RESULT_OK, intent);
+				noteBookActivity.finish();
             }   
         }); 
         
 		NoteBookButton button1=(NoteBookButton) this.findViewById(R.id.mybutton1);
-    	button1.setOptionImage(1);
-    	button1.setButtonText("主旨题");
+    	button1.setButtonBackground(1);
     	button1.button.setOnClickListener(new View.OnClickListener() {   
             public void onClick(View v) { 
             	Intent intent = new Intent();
@@ -41,8 +43,7 @@ public class NoteBookActivity extends Activity {
             }   
         }); 
     	NoteBookButton button2=(NoteBookButton) this.findViewById(R.id.mybutton2);
-    	button2.setOptionImage(2);
-    	button2.setButtonText("细节题");
+    	button2.setButtonBackground(2);
     	Log.v("asd", "asdaasd");
     	button2.button.setOnClickListener(new View.OnClickListener() {   
             public void onClick(View v) {
@@ -53,8 +54,7 @@ public class NoteBookActivity extends Activity {
             }   
         }); 
     	NoteBookButton button3=(NoteBookButton) this.findViewById(R.id.mybutton3);
-    	button3.setOptionImage(3);
-    	button3.setButtonText("多选题");
+    	button3.setButtonBackground(3);
     	button3.button.setOnClickListener(new View.OnClickListener() {   
             public void onClick(View v) { 
             	Intent intent = new Intent();
@@ -65,8 +65,7 @@ public class NoteBookActivity extends Activity {
         }); 
     	NoteBookButton button4=(NoteBookButton) this.findViewById(R.
     			id.mybutton4);
-    	button4.setOptionImage(4);
-    	button4.setButtonText("句子选择题");
+    	button4.setButtonBackground(4);
     	button4.button.setOnClickListener(new View.OnClickListener() {   
             public void onClick(View v) { 
             	Intent intent = new Intent();
@@ -76,8 +75,7 @@ public class NoteBookActivity extends Activity {
             }   
         }); 
     	NoteBookButton button5=(NoteBookButton) this.findViewById(R.id.mybutton5);
-    	button5.setOptionImage(5);
-    	button5.setButtonText("五选一(单空)");
+    	button5.setButtonBackground(5);
     	button5.button.setOnClickListener(new View.OnClickListener() {   
             public void onClick(View v) { 
             	Intent intent = new Intent();
@@ -87,8 +85,7 @@ public class NoteBookActivity extends Activity {
             }   
         }); 
     	NoteBookButton button6=(NoteBookButton) this.findViewById(R.id.mybutton6);
-    	button6.setOptionImage(6);
-    	button6.setButtonText("六选二(单空)");
+    	button6.setButtonBackground(6);
     	button6.button.setOnClickListener(new View.OnClickListener() {   
             public void onClick(View v) { 
             	Intent intent = new Intent();
@@ -98,8 +95,7 @@ public class NoteBookActivity extends Activity {
             }   
         }); 
     	NoteBookButton button7=(NoteBookButton) this.findViewById(R.id.mybutton7);
-    	button7.setOptionImage(7);
-    	button7.setButtonText("六选二(双空)");
+    	button7.setButtonBackground(7);
     	button7.button.setOnClickListener(new View.OnClickListener() {   
             public void onClick(View v) { 
             	Intent intent = new Intent();
@@ -109,8 +105,7 @@ public class NoteBookActivity extends Activity {
             }   
         }); 
     	NoteBookButton button8=(NoteBookButton) this.findViewById(R.id.mybutton8);
-    	button8.setOptionImage(8);
-    	button8.setButtonText("九选三(三空)");
+    	button8.setButtonBackground(8);
     	button8.button.setOnClickListener(new View.OnClickListener() {   
             public void onClick(View v) { 
             	Intent intent = new Intent();

@@ -17,7 +17,7 @@ public class QuestionTabBar1 extends RelativeLayout {
   
     public QuestionTabBar1(Context context, AttributeSet attrs) {  
         super(context, attrs);  
-        // 瀵煎叆甯冨眬  
+         
         LayoutInflater.from(context).inflate(R.layout.questiontabbar1, this, true);  
         backButton = (Button) this.findViewById(R.id.BackButton);  
         tabBarTitle = (TextView) this.findViewById(R.id.TabBarTitle);  

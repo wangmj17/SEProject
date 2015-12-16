@@ -8,6 +8,13 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.greverbal.CategoryActivity"  android:orientation="vertical"
     android:background="#B0E0E6">
+        
+    <com.example.greverbal.QuestionTabBar 
+        android:layout_height="wrap_content"  
+        android:layout_width="fill_parent"  
+        android:id="@+id/CategoryTabBar"
+      />
+        
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -43,10 +50,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:id="@+id/Category1"
+            android:id="@+id/Category11"
             android:scaleType="fitXY"
-            android:src="@drawable/image2"
-            android:background="#FFF"/>
+            android:src="@drawable/mainidea" />
         <View
             android:layout_width="5dip"
             android:layout_height="match_parent"
@@ -56,8 +62,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:scaleType="fitXY"
-            android:id="@+id/Category2"
-            android:background="#FFF"/>
+            android:id="@+id/Category12"
+            android:src="@drawable/detail" />
     </LinearLayout>
     <View
         android:layout_width="fill_parent"
@@ -77,8 +83,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:scaleType="fitXY"
-            android:background="#FFF"
-            android:id="@+id/Category3"/>
+            android:id="@+id/Category13"
+            android:src="@drawable/duoxuan"/>
         <View
             android:layout_width="5dip"
             android:layout_height="match_parent"
@@ -88,8 +94,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:scaleType="fitXY"
-            android:background="#FFF"
-            android:id="@+id/Category4"/>
+            android:id="@+id/Category14"
+            android:src="@drawable/xuanze"/>
     </LinearLayout>
     <View
         android:layout_width="fill_parent"
@@ -128,8 +134,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:scaleType="fitXY"
-            android:background="#FFF"
-            android:id="@+id/Category5"/>
+            android:id="@+id/Category15"
+            android:src="@drawable/wuxuanyi"/>
         <View
             android:layout_width="5dip"
             android:layout_height="match_parent"
@@ -139,8 +145,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:scaleType="fitXY"
-            android:background="#FFF"
-            android:id="@+id/Category6"/>
+            android:id="@+id/Category16"
+            android:src="@drawable/liuxuaner1"/>
     </LinearLayout>
     <View
         android:layout_width="fill_parent"
@@ -160,8 +166,9 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:scaleType="fitXY"
-            android:background="#FFF"
-            android:id="@+id/Category7"/>
+            android:src="@drawable/liuxuaner2"
+            android:id="@+id/Category17"
+            />
         <View
             android:layout_width="5dip"
             android:layout_height="match_parent"
@@ -171,7 +178,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:scaleType="fitXY"
-            android:background="#FFF"
-            android:id="@+id/Category8"/>
+            android:src="@drawable/jiuxuansan"
+            android:id="@+id/Category18"/>
     </LinearLayout>
 </LinearLayout>

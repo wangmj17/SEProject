@@ -28,6 +28,12 @@ public class MainActivity extends Activity{
         findViewById(R.id.btnWordBookbutton).setOnClickListener(new View.OnClickListener() {//by yym
             @Override
             public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,WordBookActivity.class));
+            }
+        });
+        findViewById(R.id.btnNoteBookChoosebutton).setOnClickListener(new View.OnClickListener() {//by yym
+            @Override
+            public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this,NoteBookActivity.class));
             }
         });
