@@ -23,7 +23,7 @@ public class CategoryActivity extends Activity {
 		categoryActivity = this;
 		
 		QuestionTabBar categoryTabBar = (QuestionTabBar) findViewById(R.id.CategoryTabBar);
-		categoryTabBar.setTextViewText("é¢˜åž‹è®­ç»ƒ");
+		categoryTabBar.setTextViewText("æ£°æ¨ºç€·ç’î… ç²Œ");
 		Button backButton = categoryTabBar.getBackButton();
 		final Intent intent = getIntent();
     	backButton.setOnClickListener(new View.OnClickListener() {
@@ -36,31 +36,29 @@ public class CategoryActivity extends Activity {
 			}
 		});
     	
-=======
 
 
 
-	View bcat11 = findViewById(R.id.Category11);//ÕÒµ½ÄãÒªÉèÍ¸Ã÷±³¾°µÄlayout µÄid
-        bcat11.getBackground().setAlpha(75);//0~255Í¸Ã÷¶ÈÖµ £¬0ÎªÍêÈ«Í¸Ã÷£¬255Îª²»Í¸Ã÷
-        View bcat12 = findViewById(R.id.Category12);//ÕÒµ½ÄãÒªÉèÍ¸Ã÷±³¾°µÄlayout µÄid
-        bcat12.getBackground().setAlpha(75);//0~255Í¸Ã÷¶ÈÖµ £¬0ÎªÍêÈ«Í¸Ã÷£¬255Îª²»Í¸Ã÷
-        View bcat13 = findViewById(R.id.Category13);//ÕÒµ½ÄãÒªÉèÍ¸Ã÷±³¾°µÄlayout µÄid
-        bcat13.getBackground().setAlpha(75);//0~255Í¸Ã÷¶ÈÖµ £¬0ÎªÍêÈ«Í¸Ã÷£¬255Îª²»Í¸Ã÷
-        View bcat14 = findViewById(R.id.Category14);//ÕÒµ½ÄãÒªÉèÍ¸Ã÷±³¾°µÄlayout µÄid
-        bcat14.getBackground().setAlpha(75);//0~255Í¸Ã÷¶ÈÖµ £¬0ÎªÍêÈ«Í¸Ã÷£¬255Îª²»Í¸Ã÷
-        View bcat15 = findViewById(R.id.Category15);//ÕÒµ½ÄãÒªÉèÍ¸Ã÷±³¾°µÄlayout µÄid
-        bcat15.getBackground().setAlpha(75);//0~255Í¸Ã÷¶ÈÖµ £¬0ÎªÍêÈ«Í¸Ã÷£¬255Îª²»Í¸Ã÷
-        View bcat16 = findViewById(R.id.Category16);//ÕÒµ½ÄãÒªÉèÍ¸Ã÷±³¾°µÄlayout µÄid
-        bcat16.getBackground().setAlpha(75);//0~255Í¸Ã÷¶ÈÖµ £¬0ÎªÍêÈ«Í¸Ã÷£¬255Îª²»Í¸Ã÷
-        View bcat17 = findViewById(R.id.Category17);//ÕÒµ½ÄãÒªÉèÍ¸Ã÷±³¾°µÄlayout µÄid
-        bcat17.getBackground().setAlpha(75);//0~255Í¸Ã÷¶ÈÖµ £¬0ÎªÍêÈ«Í¸Ã÷£¬255Îª²»Í¸Ã÷
-        View bcat18 = findViewById(R.id.Category18);//ÕÒµ½ÄãÒªÉèÍ¸Ã÷±³¾°µÄlayout µÄid
-        bcat18.getBackground().setAlpha(75);//0~255Í¸Ã÷¶ÈÖµ £¬0ÎªÍêÈ«Í¸Ã÷£¬255Îª²»Í¸Ã÷
+	View bcat11 = findViewById(R.id.Category11);//æ‰¾åˆ°ä½ è¦è®¾é€æ˜ŽèƒŒæ™¯çš„layout çš„id
+        bcat11.getBackground().setAlpha(75);//0~255é€æ˜Žåº¦å€¼ ï¼Œ0ä¸ºå®Œå…¨é€æ˜Žï¼Œ255ä¸ºä¸é€æ˜Ž
+        View bcat12 = findViewById(R.id.Category12);//æ‰¾åˆ°ä½ è¦è®¾é€æ˜ŽèƒŒæ™¯çš„layout çš„id
+        bcat12.getBackground().setAlpha(75);//0~255é€æ˜Žåº¦å€¼ ï¼Œ0ä¸ºå®Œå…¨é€æ˜Žï¼Œ255ä¸ºä¸é€æ˜Ž
+        View bcat13 = findViewById(R.id.Category13);//æ‰¾åˆ°ä½ è¦è®¾é€æ˜ŽèƒŒæ™¯çš„layout çš„id
+        bcat13.getBackground().setAlpha(75);//0~255é€æ˜Žåº¦å€¼ ï¼Œ0ä¸ºå®Œå…¨é€æ˜Žï¼Œ255ä¸ºä¸é€æ˜Ž
+        View bcat14 = findViewById(R.id.Category14);//æ‰¾åˆ°ä½ è¦è®¾é€æ˜ŽèƒŒæ™¯çš„layout çš„id
+        bcat14.getBackground().setAlpha(75);//0~255é€æ˜Žåº¦å€¼ ï¼Œ0ä¸ºå®Œå…¨é€æ˜Žï¼Œ255ä¸ºä¸é€æ˜Ž
+        View bcat15 = findViewById(R.id.Category15);//æ‰¾åˆ°ä½ è¦è®¾é€æ˜ŽèƒŒæ™¯çš„layout çš„id
+        bcat15.getBackground().setAlpha(75);//0~255é€æ˜Žåº¦å€¼ ï¼Œ0ä¸ºå®Œå…¨é€æ˜Žï¼Œ255ä¸ºä¸é€æ˜Ž
+        View bcat16 = findViewById(R.id.Category16);//æ‰¾åˆ°ä½ è¦è®¾é€æ˜ŽèƒŒæ™¯çš„layout çš„id
+        bcat16.getBackground().setAlpha(75);//0~255é€æ˜Žåº¦å€¼ ï¼Œ0ä¸ºå®Œå…¨é€æ˜Žï¼Œ255ä¸ºä¸é€æ˜Ž
+        View bcat17 = findViewById(R.id.Category17);//æ‰¾åˆ°ä½ è¦è®¾é€æ˜ŽèƒŒæ™¯çš„layout çš„id
+        bcat17.getBackground().setAlpha(75);//0~255é€æ˜Žåº¦å€¼ ï¼Œ0ä¸ºå®Œå…¨é€æ˜Žï¼Œ255ä¸ºä¸é€æ˜Ž
+        View bcat18 = findViewById(R.id.Category18);//æ‰¾åˆ°ä½ è¦è®¾é€æ˜ŽèƒŒæ™¯çš„layout çš„id
+        bcat18.getBackground().setAlpha(75);//0~255é€æ˜Žåº¦å€¼ ï¼Œ0ä¸ºå®Œå…¨é€æ˜Žï¼Œ255ä¸ºä¸é€æ˜Ž
 
 
 
 
->>>>>>> origin/master
 		findViewById(R.id.Category11).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
