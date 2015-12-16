@@ -9,11 +9,11 @@
     tools:context="com.example.greverbal.MainActivity" 
     android:orientation="vertical"
     android:background="#B0E0E6">
-     <TextView
+         <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Welcome come to GRE!"
+        android:text="Welcome to GRE!"
         android:id="@+id/textView"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
@@ -27,7 +27,7 @@
             android:layout_centerHorizontal="true"/>
     <View
         android:layout_width="fill_parent"
-        android:layout_height="5dip"
+        android:layout_height="10dip"
         android:background="#B0E0E6" />
     <View
         android:layout_width="fill_parent"
@@ -35,7 +35,7 @@
         android:background="#FF909090" />
     <View
         android:layout_width="fill_parent"
-        android:layout_height="5dip"
+        android:layout_height="10dip"
         android:background="#B0E0E6" />
         <LinearLayout
             android:layout_weight="1"
@@ -52,14 +52,24 @@
                 android:layout_weight="1"
                 android:id="@+id/btnCategorybutton"
                 android:scaleType="fitXY"
-                android:src="@drawable/image2"/>
+                android:src="@drawable/image2" />
+            <View
+                android:layout_width="15dip"
+                android:layout_height="match_parent"
+                android:background="#B0E0E6" />
             <ImageButton
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:id="@+id/btnExercisebutton"
-                android:scaleType="fitXY" />
+                android:scaleType="fitXY"
+                android:src="@drawable/image4"
+               />
         </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="15dip"
+            android:background="#B0E0E6" />
         <LinearLayout
             android:layout_weight="1"
             android:layout_width="match_parent"
@@ -73,12 +83,20 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:id="@+id/btnNoteBookChoosebutton"
-                android:scaleType="fitXY" />
+                android:scaleType="fitXY"
+                android:src="@drawable/image5"
+            />
+            <View
+                android:layout_width="15dip"
+                android:layout_height="match_parent"
+                android:background="#B0E0E6" />
             <ImageButton
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:id="@+id/btnWordBookbutton"
+                android:src="@drawable/image3"
+
                 android:scaleType="fitXY" />
         </LinearLayout>
     <TextView
@@ -86,7 +104,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/linearLayout2"
         android:layout_marginBottom="0dp"
-        android:text="Contact usï¼š010-88888888"
+        android:text="Contact usï¼?10-88888888"
         android:id="@+id/textView2"/>
 
     ></LinearLayout>
