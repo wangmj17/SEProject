@@ -104,12 +104,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/linearLayout2"
         android:layout_marginBottom="0dp"
-<<<<<<< HEAD
         android:textSize="10sp"
-        android:text="Copyright (c) 2015年 THU_SE_GRE. All rights reserved."
-=======
-        android:text="Contact us�?10-88888888"
->>>>>>> origin/master
+        android:text="Copyright (c) 2015å¹´ THU_SE_GRE. All rights reserved."
         android:id="@+id/textView2"/>
 
     ></LinearLayout>
