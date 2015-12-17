@@ -3,35 +3,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.greverbal.CategoryActivity"  android:orientation="vertical"
-<<<<<<< HEAD
     android:background="#B0E0E6">    
-    
-	<com.example.greverbal.QuestionTabBar 
-=======
-<<<<<<< HEAD
-    android:background="#B0E0E6">    
-    
-	<com.example.greverbal.QuestionTabBar 
-=======
-    android:background="#B0E0E6">
         
     <com.example.greverbal.QuestionTabBar 
-<<<<<<< Updated upstream
-=======
->>>>>>> origin/master
->>>>>>> Stashed changes
->>>>>>> origin/master
+
         android:layout_height="wrap_content"  
         android:layout_width="fill_parent"  
         android:id="@+id/CategoryTabBar"
       />
-<<<<<<< HEAD
-=======
-<<<<<<< Updated upstream
-        
-=======
-<<<<<<< HEAD
->>>>>>> origin/master
+
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -40,13 +20,7 @@
     android:paddingRight="25dip"
     android:paddingTop="14dip"
     android:orientation="vertical">    
-<<<<<<< HEAD
-=======
-=======
-        
->>>>>>> origin/master
->>>>>>> Stashed changes
->>>>>>> origin/master
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -213,14 +187,7 @@
             android:src="@drawable/jiuxuansan"
             android:id="@+id/Category18"/>
     </LinearLayout>
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
+
 </LinearLayout>
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/master
->>>>>>> Stashed changes
->>>>>>> origin/master
+
 </LinearLayout>
