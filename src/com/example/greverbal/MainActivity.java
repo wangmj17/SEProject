@@ -19,39 +19,16 @@ public class MainActivity extends Activity{
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
 
-	 View bcat = findViewById(R.id.btnCategorybutton);//找到你要设透明背景的layout 的id
-        bcat.getBackground().setAlpha(100);//0~255透明度值 ，0为完全透明，255为不透明
-        View bexe = findViewById(R.id.btnExercisebutton);//找到你要设透明背景的layout 的id
-        bexe.getBackground().setAlpha(100);//0~255透明度值 ，0为完全透明，255为不透明
-        View bword = findViewById(R.id.btnWordBookbutton);//找到你要设透明背景的layout 的id
-        bword.getBackground().setAlpha(100);//0~255透明度值 ，0为完全透明，255为不透明
-        View bnot = findViewById(R.id.btnNoteBookChoosebutton);//找到你要设透明背景的layout 的id
-        bnot.getBackground().setAlpha(100);//0~255透明度值 ，0为完全透明，255为不透明
-<<<<<<< Updated upstream
+        View bcat = findViewById(R.id.btnCategorybutton);//鑴劒纰岄檰鑴涜尗鑴檵鑴＄尗鑴ヨ祩鑴欐鍗ら瞾鎴幊纰岃剾layout 纰岃剾id
+        bcat.getBackground().setAlpha(150);//0~255鑴ヨ祩鑴欐闇茶劆鑴扮 鎷㈠崲0鑴﹂檵鑴ラ敋鑴犺姦鑴ヨ祩鑴欐鎷㈠崲255鑴﹂檵铏忕鑴ヨ祩鑴欐
+        View bexe = findViewById(R.id.btnExercisebutton);//鑴劒纰岄檰鑴涜尗鑴檵鑴＄尗鑴ヨ祩鑴欐鍗ら瞾鎴幊纰岃剾layout 纰岃剾id
+        bexe.getBackground().setAlpha(150);//0~255鑴ヨ祩鑴欐闇茶劆鑴扮 鎷㈠崲0鑴﹂檵鑴ラ敋鑴犺姦鑴ヨ祩鑴欐鎷㈠崲255鑴﹂檵铏忕鑴ヨ祩鑴欐
+        View bword = findViewById(R.id.btnWordBookbutton);//鑴劒纰岄檰鑴涜尗鑴檵鑴＄尗鑴ヨ祩鑴欐鍗ら瞾鎴幊纰岃剾layout 纰岃剾id
+        bword.getBackground().setAlpha(150);//0~255鑴ヨ祩鑴欐闇茶劆鑴扮 鎷㈠崲0鑴﹂檵鑴ラ敋鑴犺姦鑴ヨ祩鑴欐鎷㈠崲255鑴﹂檵铏忕鑴ヨ祩鑴欐
+        View bnot = findViewById(R.id.btnNoteBookChoosebutton);//鑴劒纰岄檰鑴涜尗鑴檵鑴＄尗鑴ヨ祩鑴欐鍗ら瞾鎴幊纰岃剾layout 纰岃剾id
+        bnot.getBackground().setAlpha(150);//0~255鑴ヨ祩鑴欐闇茶劆鑴扮 鎷㈠崲0鑴﹂檵鑴ラ敋鑴犺姦鑴ヨ祩鑴欐鎷㈠崲255鑴﹂檵铏忕鑴ヨ祩鑴欐
         
 
-=======
-        
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> origin/master
-        View bcat = findViewById(R.id.btnCategorybutton);//脮脪碌陆脛茫脪陋脡猫脥赂脙梅卤鲁戮掳碌脛layout 碌脛id
-        bcat.getBackground().setAlpha(150);//0~255脥赂脙梅露脠脰碌 拢卢0脦陋脥锚脠芦脥赂脙梅拢卢255脦陋虏禄脥赂脙梅
-        View bexe = findViewById(R.id.btnExercisebutton);//脮脪碌陆脛茫脪陋脡猫脥赂脙梅卤鲁戮掳碌脛layout 碌脛id
-        bexe.getBackground().setAlpha(150);//0~255脥赂脙梅露脠脰碌 拢卢0脦陋脥锚脠芦脥赂脙梅拢卢255脦陋虏禄脥赂脙梅
-        View bword = findViewById(R.id.btnWordBookbutton);//脮脪碌陆脛茫脪陋脡猫脥赂脙梅卤鲁戮掳碌脛layout 碌脛id
-        bword.getBackground().setAlpha(150);//0~255脥赂脙梅露脠脰碌 拢卢0脦陋脥锚脠芦脥赂脙梅拢卢255脦陋虏禄脥赂脙梅
-        View bnot = findViewById(R.id.btnNoteBookChoosebutton);//脮脪碌陆脛茫脪陋脡猫脥赂脙梅卤鲁戮掳碌脛layout 碌脛id
-        bnot.getBackground().setAlpha(150);//0~255脥赂脙梅露脠脰碌 拢卢0脦陋脥锚脠芦脥赂脙梅拢卢255脦陋虏禄脥赂脙梅
-        
-<<<<<<< HEAD
-=======
-=======
-
->>>>>>> origin/master
->>>>>>> Stashed changes
->>>>>>> origin/master
         findViewById(R.id.btnCategorybutton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
