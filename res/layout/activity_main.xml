@@ -111,4 +111,4 @@
         android:text="Copyright (c) 2015年 THU_SE_GRE. All rights reserved."
         android:id="@+id/textView2"/>
 
-    ></LinearLayout>
+    </LinearLayout>
