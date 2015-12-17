@@ -19,11 +19,24 @@ public class CategoryActivity extends Activity {
 		this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		setContentView(R.layout.activity_category);
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+		categoryActivity = this;
+		
+		QuestionTabBar categoryTabBar = (QuestionTabBar) findViewById(R.id.CategoryTabBar);
+		categoryTabBar.setTextViewText("题型训练");
+=======
+>>>>>>> Stashed changes
 <<<<<<< HEAD
 		categoryActivity = this;
 		
 		QuestionTabBar categoryTabBar = (QuestionTabBar) findViewById(R.id.CategoryTabBar);
 		categoryTabBar.setTextViewText("棰樺瀷璁粌");
+<<<<<<< Updated upstream
+=======
+>>>>>>> origin/master
+>>>>>>> Stashed changes
 		Button backButton = categoryTabBar.getBackButton();
 		final Intent intent = getIntent();
     	backButton.setOnClickListener(new View.OnClickListener() {
@@ -36,6 +49,28 @@ public class CategoryActivity extends Activity {
 			}
 		});
     	
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+    	View bcat11 = findViewById(R.id.Category11);//找到你要设透明背景的layout 的id
+        bcat11.getBackground().setAlpha(120);//0~255透明度值 ，0为完全透明，255为不透明
+        View bcat12 = findViewById(R.id.Category12);//找到你要设透明背景的layout 的id
+        bcat12.getBackground().setAlpha(120);//0~255透明度值 ，0为完全透明，255为不透明
+        View bcat13 = findViewById(R.id.Category13);//找到你要设透明背景的layout 的id
+        bcat13.getBackground().setAlpha(120);//0~255透明度值 ，0为完全透明，255为不透明
+        View bcat14 = findViewById(R.id.Category14);//找到你要设透明背景的layout 的id
+        bcat14.getBackground().setAlpha(120);//0~255透明度值 ，0为完全透明，255为不透明
+        View bcat15 = findViewById(R.id.Category15);//找到你要设透明背景的layout 的id
+        bcat15.getBackground().setAlpha(120);//0~255透明度值 ，0为完全透明，255为不透明
+        View bcat16 = findViewById(R.id.Category16);//找到你要设透明背景的layout 的id
+        bcat16.getBackground().setAlpha(120);//0~255透明度值 ，0为完全透明，255为不透明
+        View bcat17 = findViewById(R.id.Category17);//找到你要设透明背景的layout 的id
+        bcat17.getBackground().setAlpha(120);//0~255透明度值 ，0为完全透明，255为不透明
+        View bcat18 = findViewById(R.id.Category18);//找到你要设透明背景的layout 的id
+        bcat18.getBackground().setAlpha(120);//0~255透明度值 ，0为完全透明，255为不透明
+        
+=======
+>>>>>>> Stashed changes
 
 
 
@@ -59,6 +94,10 @@ public class CategoryActivity extends Activity {
 
 
 
+<<<<<<< Updated upstream
+=======
+>>>>>>> origin/master
+>>>>>>> Stashed changes
 		findViewById(R.id.Category11).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

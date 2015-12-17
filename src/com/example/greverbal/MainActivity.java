@@ -27,8 +27,25 @@ public class MainActivity extends Activity{
         bword.getBackground().setAlpha(100);//0~255͸����ֵ ��0Ϊ��ȫ͸����255Ϊ��͸��
         View bnot = findViewById(R.id.btnNoteBookChoosebutton);//�ҵ���Ҫ��͸��������layout ��id
         bnot.getBackground().setAlpha(100);//0~255͸����ֵ ��0Ϊ��ȫ͸����255Ϊ��͸��
+<<<<<<< Updated upstream
         
 
+=======
+        
+<<<<<<< HEAD
+        View bcat = findViewById(R.id.btnCategorybutton);//ÕÒµ½ÄãÒªÉèÍ¸Ã÷±³¾°µÄlayout µÄid
+        bcat.getBackground().setAlpha(150);//0~255Í¸Ã÷¶ÈÖµ £¬0ÎªÍêÈ«Í¸Ã÷£¬255Îª²»Í¸Ã÷
+        View bexe = findViewById(R.id.btnExercisebutton);//ÕÒµ½ÄãÒªÉèÍ¸Ã÷±³¾°µÄlayout µÄid
+        bexe.getBackground().setAlpha(150);//0~255Í¸Ã÷¶ÈÖµ £¬0ÎªÍêÈ«Í¸Ã÷£¬255Îª²»Í¸Ã÷
+        View bword = findViewById(R.id.btnWordBookbutton);//ÕÒµ½ÄãÒªÉèÍ¸Ã÷±³¾°µÄlayout µÄid
+        bword.getBackground().setAlpha(150);//0~255Í¸Ã÷¶ÈÖµ £¬0ÎªÍêÈ«Í¸Ã÷£¬255Îª²»Í¸Ã÷
+        View bnot = findViewById(R.id.btnNoteBookChoosebutton);//ÕÒµ½ÄãÒªÉèÍ¸Ã÷±³¾°µÄlayout µÄid
+        bnot.getBackground().setAlpha(150);//0~255Í¸Ã÷¶ÈÖµ £¬0ÎªÍêÈ«Í¸Ã÷£¬255Îª²»Í¸Ã÷
+        
+=======
+
+>>>>>>> origin/master
+>>>>>>> Stashed changes
         findViewById(R.id.btnCategorybutton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
