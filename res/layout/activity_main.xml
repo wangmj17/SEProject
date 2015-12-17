@@ -103,11 +103,26 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/linearLayout2"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin/master
         android:layout_marginTop="10dp"
         android:layout_marginLeft="20dip"
         android:layout_marginRight="20dip"
         android:textSize="10sp"
         android:text="Copyright (c) 2015年 THU_SE_GRE. All rights reserved."
+<<<<<<< HEAD
+=======
+=======
+        android:layout_marginBottom="0dp"
+        android:textSize="10sp"
+        android:text="Copyright (c) 2015å¹´ THU_SE_GRE. All rights reserved."
+<<<<<<< Updated upstream
+=======
+>>>>>>> origin/master
+>>>>>>> Stashed changes
+>>>>>>> origin/master
         android:id="@+id/textView2"/>
 
     ></LinearLayout>

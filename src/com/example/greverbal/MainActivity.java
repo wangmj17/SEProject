@@ -18,7 +18,24 @@ public class MainActivity extends Activity{
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
+
+	 View bcat = findViewById(R.id.btnCategorybutton);//找到你要设透明背景的layout 的id
+        bcat.getBackground().setAlpha(100);//0~255透明度值 ，0为完全透明，255为不透明
+        View bexe = findViewById(R.id.btnExercisebutton);//找到你要设透明背景的layout 的id
+        bexe.getBackground().setAlpha(100);//0~255透明度值 ，0为完全透明，255为不透明
+        View bword = findViewById(R.id.btnWordBookbutton);//找到你要设透明背景的layout 的id
+        bword.getBackground().setAlpha(100);//0~255透明度值 ，0为完全透明，255为不透明
+        View bnot = findViewById(R.id.btnNoteBookChoosebutton);//找到你要设透明背景的layout 的id
+        bnot.getBackground().setAlpha(100);//0~255透明度值 ，0为完全透明，255为不透明
+<<<<<<< Updated upstream
         
+
+=======
+        
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin/master
         View bcat = findViewById(R.id.btnCategorybutton);//脮脪碌陆脛茫脪陋脡猫脥赂脙梅卤鲁戮掳碌脛layout 碌脛id
         bcat.getBackground().setAlpha(150);//0~255脥赂脙梅露脠脰碌 拢卢0脦陋脥锚脠芦脥赂脙梅拢卢255脦陋虏禄脥赂脙梅
         View bexe = findViewById(R.id.btnExercisebutton);//脮脪碌陆脛茫脪陋脡猫脥赂脙梅卤鲁戮掳碌脛layout 碌脛id
@@ -28,6 +45,13 @@ public class MainActivity extends Activity{
         View bnot = findViewById(R.id.btnNoteBookChoosebutton);//脮脪碌陆脛茫脪陋脡猫脥赂脙梅卤鲁戮掳碌脛layout 碌脛id
         bnot.getBackground().setAlpha(150);//0~255脥赂脙梅露脠脰碌 拢卢0脦陋脥锚脠芦脥赂脙梅拢卢255脦陋虏禄脥赂脙梅
         
+<<<<<<< HEAD
+=======
+=======
+
+>>>>>>> origin/master
+>>>>>>> Stashed changes
+>>>>>>> origin/master
         findViewById(R.id.btnCategorybutton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
