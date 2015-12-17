@@ -26,7 +26,12 @@ public class NoteBookHandler {
 		
 	public void addQuestion(int exerciseIndex, int questionIndex, int category){
 		
-		wrongQuestions = exerciseIndex + "," + questionIndex + "," + category + "," + wrongQuestions;
+		if (wrongQuestions.length() > 0){
+			wrongQuestions = exerciseIndex + "," + questionIndex + "," + category + "," + wrongQuestions;
+		}
+		else{
+			wrongQuestions = exerciseIndex + "," + questionIndex + "," + category;
+		}
 		
 		SharedPreferences.Editor editor = userHistory.edit();
 		editor.putString("wrongQuestions", wrongQuestions);
@@ -38,7 +43,7 @@ public class NoteBookHandler {
 	public void deleteQuestion(int exerciseIndex, int questionIndex, int category){
 		
 		String[] questionArray = wrongQuestions.split(",");
-		for (int i = 0; i < questionArray.length - 1; i += 3){
+		for (int i = 0; i < questionArray.length; i += 3){
 			if (questionArray[i].equals(String.valueOf(exerciseIndex)) && 
 					questionArray[i + 1].equals(String.valueOf(questionIndex)) &&
 					questionArray[i + 2].equals(String.valueOf(category))){
@@ -49,9 +54,14 @@ public class NoteBookHandler {
 			}
 		}
 		wrongQuestions = "";
-		for (int i = 0; i < questionArray.length - 1; i ++){
-			if (questionArray[i].length() > 0)
-			wrongQuestions = wrongQuestions + questionArray[i] + ",";
+		for (int i = questionArray.length - 1; i >= 0; i --){
+			if (questionArray[i].length() > 0){
+				if (wrongQuestions.length() > 0)
+					wrongQuestions = questionArray[i] + ","  + wrongQuestions;
+				else
+					wrongQuestions = questionArray[i];
+			}
+			
 		}
 		
 		SharedPreferences.Editor editor = userHistory.edit();
@@ -61,27 +71,30 @@ public class NoteBookHandler {
 	
 	public List<Integer[]> findCategory(int category){ 
 		questionList.clear();
-		String[] questionArray = wrongQuestions.split(",");
-		//Log.v("yym",wrongQuestions );
-		for (int i = 0; i < questionArray.length - 1; i += 3){
-			if (questionArray[i + 2].equals(String.valueOf(category))){
-				Integer[] info=new Integer[2];
-				info[0]=Integer.parseInt(questionArray[i]);//exerciseIndex
-				info[1]=Integer.parseInt(questionArray[i+1]);//questionIndex
-				questionList.add(info); 
+		if (wrongQuestions.length() > 0){
+			String[] questionArray = wrongQuestions.split(",");
+			//Log.v("yym",wrongQuestions );
+			for (int i = 0; i < questionArray.length; i += 3){
+				if (questionArray[i + 2].equals(String.valueOf(category))){
+					Integer[] info=new Integer[2];
+					info[0]=Integer.parseInt(questionArray[i]);//exerciseIndex
+					info[1]=Integer.parseInt(questionArray[i+1]);//questionIndex
+					questionList.add(info); 
+				}
 			}
 		}
 		return questionList;
 	}
 	
 	public int find(int exerciseIndex, int questionIndex, int category){
-		
-		String[] questionArray = wrongQuestions.split(",");
-		for (int i = 0; i < questionArray.length - 1; i += 3){
-			if (questionArray[i].equals(String.valueOf(exerciseIndex)) && 
-					questionArray[i + 1].equals(String.valueOf(questionIndex)) &&
-					questionArray[i + 2].equals(String.valueOf(category))){
-				return i/3;
+		if (wrongQuestions.length() > 0){
+			String[] questionArray = wrongQuestions.split(",");
+			for (int i = 0; i < questionArray.length; i += 3){
+				if (questionArray[i].equals(String.valueOf(exerciseIndex)) && 
+						questionArray[i + 1].equals(String.valueOf(questionIndex)) &&
+						questionArray[i + 2].equals(String.valueOf(category))){
+					return i/3;
+				}
 			}
 		}
 		return -1;
