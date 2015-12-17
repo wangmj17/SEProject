@@ -56,7 +56,7 @@ public class ReadingQuestionsActivity extends Activity {
 	private int lastID;
 	private String[] options;
 	private ReadingExercise exercise;
-	private ReadingQuestion question;
+	private static ReadingQuestion question;
 	private Intent intent;
 	
 	@SuppressWarnings("deprecation")
@@ -145,7 +145,7 @@ public class ReadingQuestionsActivity extends Activity {
 			nextButton.setAlpha(0.5f);
 		}
 		
-        mDetector = new GestureDetector(this, new WholeTextGestureListener());  
+        mDetector = new GestureDetector(this, new WholeTextGestureListener(1));  
         questionTextScrollView.setLongClickable(true);  
         questionTextScrollView.setOnTouchListener(new OnTouchListener() {  
 			@Override
@@ -364,9 +364,8 @@ public class ReadingQuestionsActivity extends Activity {
     }
     
     public static void showWholeText(){
-    	TextView questionText = (TextView) readingQuestionsActivity.findViewById(R.id.QuestionText);
     	Intent intent = new Intent(readingQuestionsActivity,WholeTextActivity.class);
-    	intent.putExtra("text",questionText.getText());
+    	intent.putExtra("text",question.text);
     	readingQuestionsActivity.startActivityForResult(intent, 0);
     }
     

@@ -59,7 +59,7 @@ public class DiscreteQuestionsActivity extends Activity {
 	private String[] options;
 	private String[] explanations;
 	private DiscreteExercise exercise;
-	private DiscreteQuestion question;
+	private static DiscreteQuestion question;
 	private Intent intent;
 	
 	@SuppressWarnings("deprecation")
@@ -150,7 +150,7 @@ public class DiscreteQuestionsActivity extends Activity {
 			nextButton.setAlpha(0.5f);
 		}
 		
-        mDetector = new GestureDetector(this, new WholeTextGestureListener());  
+        mDetector = new GestureDetector(this, new WholeTextGestureListener(0));  
         questionTextScrollView.setLongClickable(true);  
         questionTextScrollView.setOnTouchListener(new OnTouchListener() {  
 			@Override
@@ -413,9 +413,8 @@ public class DiscreteQuestionsActivity extends Activity {
     }
     
     public static void showWholeText(){
-    	TextView questionText = (TextView) discreteQuestionsActivity.findViewById(R.id.QuestionText);
     	Intent intent = new Intent(discreteQuestionsActivity,WholeTextActivity.class);
-    	intent.putExtra("text",questionText.getText());
+    	intent.putExtra("text",question.text);
     	discreteQuestionsActivity.startActivityForResult(intent, 0);
     }
     

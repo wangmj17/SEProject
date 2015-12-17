@@ -19,6 +19,15 @@ public class MainActivity extends Activity{
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
         
+        View bcat = findViewById(R.id.btnCategorybutton);//ÕÒµ½ÄãÒªÉèÍ¸Ã÷±³¾°µÄlayout µÄid
+        bcat.getBackground().setAlpha(150);//0~255Í¸Ã÷¶ÈÖµ £¬0ÎªÍêÈ«Í¸Ã÷£¬255Îª²»Í¸Ã÷
+        View bexe = findViewById(R.id.btnExercisebutton);//ÕÒµ½ÄãÒªÉèÍ¸Ã÷±³¾°µÄlayout µÄid
+        bexe.getBackground().setAlpha(150);//0~255Í¸Ã÷¶ÈÖµ £¬0ÎªÍêÈ«Í¸Ã÷£¬255Îª²»Í¸Ã÷
+        View bword = findViewById(R.id.btnWordBookbutton);//ÕÒµ½ÄãÒªÉèÍ¸Ã÷±³¾°µÄlayout µÄid
+        bword.getBackground().setAlpha(150);//0~255Í¸Ã÷¶ÈÖµ £¬0ÎªÍêÈ«Í¸Ã÷£¬255Îª²»Í¸Ã÷
+        View bnot = findViewById(R.id.btnNoteBookChoosebutton);//ÕÒµ½ÄãÒªÉèÍ¸Ã÷±³¾°µÄlayout µÄid
+        bnot.getBackground().setAlpha(150);//0~255Í¸Ã÷¶ÈÖµ £¬0ÎªÍêÈ«Í¸Ã÷£¬255Îª²»Í¸Ã÷
+        
         findViewById(R.id.btnCategorybutton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -26,6 +35,12 @@ public class MainActivity extends Activity{
             }
         });
         findViewById(R.id.btnWordBookbutton).setOnClickListener(new View.OnClickListener() {//by yym
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,WordBookActivity.class));
+            }
+        });
+        findViewById(R.id.btnNoteBookChoosebutton).setOnClickListener(new View.OnClickListener() {//by yym
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this,NoteBookActivity.class));

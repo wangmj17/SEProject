@@ -38,7 +38,7 @@ public class ExerciseActivity extends TabActivity {
 	private TabButton qtb28=null;
 	private TabButton qtb29=null;
 	private TabButton qtb210=null;
-	
+	private ExerciseActivity exerciseActivity;
 	
 	 TabHost mTabHost;
 	 int mMenuTag=0; 
@@ -59,7 +59,8 @@ public class ExerciseActivity extends TabActivity {
      super.onCreate(savedInstanceState);  
      this.requestWindowFeature(Window.FEATURE_NO_TITLE);
      
-     
+     exerciseActivity = this;
+     final Intent intent = getIntent();
      //获取TabHost   
      mTabHost=this.getTabHost();   
      //过滤出TabHost布局   
@@ -69,11 +70,11 @@ public class ExerciseActivity extends TabActivity {
         
      //增加2个选型卡 绘制布局   
      mTabHost.addTab(mTabHost.newTabSpec("One")   
-              .setIndicator("Reading")   
+              .setIndicator("阅读")   
               .setContent(R.id.frist_tab_tablelayout));   
         
      mTabHost.addTab(mTabHost.newTabSpec("Two")   
-             .setIndicator("Discrete")   
+             .setIndicator("填空")   
              .setContent(R.id.second_tab_tablelayout));   
         
     
@@ -104,24 +105,22 @@ public class ExerciseActivity extends TabActivity {
      qtb1= (QuestionTabBar) this.findViewById(R.id.QuestionTabBar1);//$$$$$$
      qtb1.getBackButton().setOnClickListener(new View.OnClickListener() {   //$$$$$$
          public void onClick(View v) { 
-         	Intent intent = new Intent();
-         	intent.setClass(ExerciseActivity.this,MainActivity.class);
-         	startActivityForResult(intent,0);
+        	 exerciseActivity.setResult(RESULT_OK, intent);
+			 exerciseActivity.finish();
          }
      });
-     qtb1.setTextViewText("Reading");
+     qtb1.setTextViewText("阅读");
      qtb2= (QuestionTabBar) this.findViewById(R.id.QuestionTabBar2);//$$$$$$
      qtb2.getBackButton().setOnClickListener(new View.OnClickListener() {   //$$$$$$
          public void onClick(View v) { 
-         	Intent intent = new Intent();
-         	intent.setClass(ExerciseActivity.this,MainActivity.class);
-         	startActivityForResult(intent,0);
+        	 exerciseActivity.setResult(RESULT_OK, intent);
+			 exerciseActivity.finish();
          }   
      });
-     qtb2.setTextViewText("Discrete");
+     qtb2.setTextViewText("填空");
      
      qtb11=  (TabButton)this.findViewById(R.id.mybutton11);//$$$$$$
-     qtb11.button.setText("Reading 01");
+     qtb11.button.setText("阅读 01");
      qtb11.button.setOnClickListener(new View.OnClickListener() {   //$$$$$$
          public void onClick(View v) { 
          	Intent intent = new Intent();
@@ -132,7 +131,7 @@ public class ExerciseActivity extends TabActivity {
          }   
      });
      qtb12= (TabButton) this.findViewById(R.id.mybutton12);//$$$$$$
-     qtb12.button.setText("Reading 02");
+     qtb12.button.setText("阅读 02");
      qtb12.button.setOnClickListener(new View.OnClickListener() {   //$$$$$$
          public void onClick(View v) { 
          	Intent intent = new Intent();
@@ -143,7 +142,7 @@ public class ExerciseActivity extends TabActivity {
          }   
      });
      qtb13=  (TabButton)this.findViewById(R.id.mybutton13);//$$$$$$
-     qtb13.button.setText("Reading 03");
+     qtb13.button.setText("阅读 03");
      qtb13.button.setOnClickListener(new View.OnClickListener() {   //$$$$$$
          public void onClick(View v) { 
          	Intent intent = new Intent();
@@ -154,7 +153,7 @@ public class ExerciseActivity extends TabActivity {
          }   
      });
      qtb14= (TabButton) this.findViewById(R.id.mybutton14);//$$$$$$
-     qtb14.button.setText("Reading 04");
+     qtb14.button.setText("阅读 04");
      qtb14.button.setOnClickListener(new View.OnClickListener() {   //$$$$$$
          public void onClick(View v) { 
          	Intent intent = new Intent();
@@ -165,7 +164,7 @@ public class ExerciseActivity extends TabActivity {
          }   
      });
      qtb15=  (TabButton)this.findViewById(R.id.mybutton15);//$$$$$$
-     qtb15.button.setText("Reading 05");
+     qtb15.button.setText("阅读 05");
      qtb15.button.setOnClickListener(new View.OnClickListener() {   //$$$$$$
          public void onClick(View v) { 
          	Intent intent = new Intent();
@@ -176,7 +175,7 @@ public class ExerciseActivity extends TabActivity {
          }   
      });
      qtb16= (TabButton) this.findViewById(R.id.mybutton16);//$$$$$$
-     qtb16.button.setText("Reading 06");
+     qtb16.button.setText("阅读 06");
      qtb16.button.setOnClickListener(new View.OnClickListener() {   //$$$$$$
          public void onClick(View v) { 
          	Intent intent = new Intent();
@@ -187,7 +186,7 @@ public class ExerciseActivity extends TabActivity {
          }   
      });
      qtb17=  (TabButton)this.findViewById(R.id.mybutton17);//$$$$$$
-     qtb17.button.setText("Reading 07");
+     qtb17.button.setText("阅读 07");
      qtb17.button.setOnClickListener(new View.OnClickListener() {   //$$$$$$
          public void onClick(View v) { 
          	Intent intent = new Intent();
@@ -198,7 +197,7 @@ public class ExerciseActivity extends TabActivity {
          }   
      });
      qtb18= (TabButton) this.findViewById(R.id.mybutton18);//$$$$$$
-     qtb18.button.setText("Reading 08");
+     qtb18.button.setText("阅读 08");
      qtb18.button.setOnClickListener(new View.OnClickListener() {   //$$$$$$
          public void onClick(View v) { 
          	Intent intent = new Intent();
@@ -209,7 +208,7 @@ public class ExerciseActivity extends TabActivity {
          }   
      });
      qtb19=  (TabButton)this.findViewById(R.id.mybutton19);//$$$$$$
-     qtb19.button.setText("Reading 09");
+     qtb19.button.setText("阅读 09");
      qtb19.button.setOnClickListener(new View.OnClickListener() {   //$$$$$$
          public void onClick(View v) { 
          	Intent intent = new Intent();
@@ -220,7 +219,7 @@ public class ExerciseActivity extends TabActivity {
          }   
      });
      qtb110= (TabButton) this.findViewById(R.id.mybutton110);//$$$$$$
-     qtb110.button.setText("Reading 10");
+     qtb110.button.setText("阅读 10");
      qtb110.button.setOnClickListener(new View.OnClickListener() {   //$$$$$$
          public void onClick(View v) { 
          	Intent intent = new Intent();
@@ -233,7 +232,7 @@ public class ExerciseActivity extends TabActivity {
      
      
      qtb21=  (TabButton)this.findViewById(R.id.mybutton21);//$$$$$$
-     qtb21.button.setText("Discrete 01");
+     qtb21.button.setText("填空 01");
      qtb21.button.setOnClickListener(new View.OnClickListener() {   //$$$$$$
          public void onClick(View v) { 
          	Intent intent = new Intent();
@@ -244,7 +243,7 @@ public class ExerciseActivity extends TabActivity {
          }   
      });
      qtb22= (TabButton) this.findViewById(R.id.mybutton22);//$$$$$$
-     qtb22.button.setText("Discrete 02");
+     qtb22.button.setText("填空 02");
      qtb22.button.setOnClickListener(new View.OnClickListener() {   //$$$$$$
          public void onClick(View v) { 
          	Intent intent = new Intent();
@@ -255,7 +254,7 @@ public class ExerciseActivity extends TabActivity {
          }   
      });
      qtb23=  (TabButton)this.findViewById(R.id.mybutton23);//$$$$$$
-     qtb23.button.setText("Discrete 03");
+     qtb23.button.setText("填空 03");
      qtb23.button.setOnClickListener(new View.OnClickListener() {   //$$$$$$
          public void onClick(View v) { 
          	Intent intent = new Intent();
@@ -266,7 +265,7 @@ public class ExerciseActivity extends TabActivity {
          }   
      });
      qtb24= (TabButton) this.findViewById(R.id.mybutton24);//$$$$$$
-     qtb24.button.setText("Discrete 04");
+     qtb24.button.setText("填空 04");
      qtb24.button.setOnClickListener(new View.OnClickListener() {   //$$$$$$
          public void onClick(View v) { 
          	Intent intent = new Intent();
@@ -277,7 +276,7 @@ public class ExerciseActivity extends TabActivity {
          }   
      });
      qtb25=  (TabButton)this.findViewById(R.id.mybutton25);//$$$$$$
-     qtb25.button.setText("Discrete 05");
+     qtb25.button.setText("填空 05");
      qtb25.button.setOnClickListener(new View.OnClickListener() {   //$$$$$$
          public void onClick(View v) { 
          	Intent intent = new Intent();
@@ -288,7 +287,7 @@ public class ExerciseActivity extends TabActivity {
          }   
      });
      qtb26= (TabButton) this.findViewById(R.id.mybutton26);//$$$$$$
-     qtb26.button.setText("Discrete 06");
+     qtb26.button.setText("填空 06");
      qtb26.button.setOnClickListener(new View.OnClickListener() {   //$$$$$$
          public void onClick(View v) { 
          	Intent intent = new Intent();
@@ -299,7 +298,7 @@ public class ExerciseActivity extends TabActivity {
          }   
      });
      qtb27=  (TabButton)this.findViewById(R.id.mybutton27);//$$$$$$
-     qtb27.button.setText("Discrete 07");
+     qtb27.button.setText("填空 07");
      qtb27.button.setOnClickListener(new View.OnClickListener() {   //$$$$$$
          public void onClick(View v) { 
          	Intent intent = new Intent();
@@ -310,7 +309,7 @@ public class ExerciseActivity extends TabActivity {
          }   
      });
      qtb28= (TabButton) this.findViewById(R.id.mybutton28);//$$$$$$
-     qtb28.button.setText("Discrete 08");
+     qtb28.button.setText("填空 08");
      qtb28.button.setOnClickListener(new View.OnClickListener() {   //$$$$$$
          public void onClick(View v) { 
          	Intent intent = new Intent();
@@ -321,7 +320,7 @@ public class ExerciseActivity extends TabActivity {
          }   
      });
      qtb29=  (TabButton)this.findViewById(R.id.mybutton29);//$$$$$$
-     qtb29.button.setText("Discrete 09");
+     qtb29.button.setText("填空 09");
      qtb29.button.setOnClickListener(new View.OnClickListener() {   //$$$$$$
          public void onClick(View v) { 
          	Intent intent = new Intent();
@@ -332,7 +331,7 @@ public class ExerciseActivity extends TabActivity {
          }   
      });
      qtb210= (TabButton) this.findViewById(R.id.mybutton210);//$$$$$$
-     qtb210.button.setText("Discrete 10");
+     qtb210.button.setText("填空 10");
      qtb210.button.setOnClickListener(new View.OnClickListener() {   //$$$$$$
          public void onClick(View v) { 
          	Intent intent = new Intent();

@@ -15,9 +15,8 @@ import android.widget.TextView;
  
 public class NoteBookButton extends RelativeLayout{
 	private TextView optionText;
-	private ImageView optionImage;
-	private int questionType;
 	public Button button;
+	private int questionType;
 	
 	public NoteBookButton(Context context){
 		this(context, null);  
@@ -27,41 +26,36 @@ public class NoteBookButton extends RelativeLayout{
 		super(context, attrs);
 		// 导入布局  
         LayoutInflater.from(context).inflate(R.layout.notebookbutton, this, true);
-		optionImage = (ImageView) this.findViewById(R.id.OptionImage);
-		button=(Button) this.findViewById(R.id.bt);
+		button = (Button) this.findViewById(R.id.bt);
 		
 	}
   
 	 
-	public void setButtonText(String text){
-		button.setText(text);
-	}
-	 
-	public void setOptionImage(int questionType){
+	public void setButtonBackground(int questionType){
 		this.questionType = questionType;
 		if(questionType == 1){
-			optionImage.setBackgroundResource(R.drawable.mainidea);
+			button.setBackgroundResource(R.drawable.mainidea);
 		}  
 		else if(questionType == 2){
-			optionImage.setBackgroundResource(R.drawable.detail);
+			button.setBackgroundResource(R.drawable.detail);
 		}
 		else if(questionType == 3){
-			optionImage.setBackgroundResource(R.drawable.duoxuan);
+			button.setBackgroundResource(R.drawable.duoxuan);
 		}
 		else if(questionType == 4){
-			optionImage.setBackgroundResource(R.drawable.sentence_selection);
+			button.setBackgroundResource(R.drawable.xuanze);
 		}
 		else if(questionType == 5){
-			optionImage.setBackgroundResource(R.drawable.wuxuanyi);
+			button.setBackgroundResource(R.drawable.wuxuanyi);
 		}
 		else if(questionType == 6){
-			optionImage.setBackgroundResource(R.drawable.liuxuaner1);
+			button.setBackgroundResource(R.drawable.liuxuaner1);
 		}
 		else if(questionType == 7){
-			optionImage.setBackgroundResource(R.drawable.liuxuaner2);
+			button.setBackgroundResource(R.drawable.liuxuaner2);
 		}
 		else {
-			optionImage.setBackgroundResource(R.drawable.jiuxuansan);
+			button.setBackgroundResource(R.drawable.jiuxuansan);
 		}
 		
 	}
