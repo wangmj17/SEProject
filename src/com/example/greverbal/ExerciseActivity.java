@@ -58,7 +58,7 @@ public class ExerciseActivity extends TabActivity {
      // TODO Auto-generated method stub   
      super.onCreate(savedInstanceState);  
      this.requestWindowFeature(Window.FEATURE_NO_TITLE);
-     
+     this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
      exerciseActivity = this;
      final Intent intent = getIntent();
      //获取TabHost   
