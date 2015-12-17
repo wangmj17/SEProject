@@ -50,6 +50,7 @@ public class NoteBookHandler {
 		}
 		wrongQuestions = "";
 		for (int i = 0; i < questionArray.length - 1; i ++){
+			if (questionArray[i].length() > 0)
 			wrongQuestions = wrongQuestions + questionArray[i] + ",";
 		}
 		

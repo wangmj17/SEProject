@@ -39,6 +39,7 @@ public class WordBookHandler {
 		}
 		words = "";
 		for (int i = 0; i < wordArray.length - 1; i ++){
+				if(wordArray[i].length() > 0)
 				words = words + wordArray[i] + ",";
 		}
 		

@@ -20,7 +20,7 @@ public class NoteBookChooseActivity extends Activity{
 	private int QuestionType;
 	private ListView listView=null; 
 	private QuestionTabBar qtb=null;
-	private NoteBookChooseActivity noteBookChooseActivity=this;
+	private NoteBookChooseActivity noteBookChooseActivity;
 	private NoteBookHandler noteBookHandler;
     private List<Map<String, Object>> list; 
     
@@ -29,8 +29,9 @@ public class NoteBookChooseActivity extends Activity{
         
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        noteBookChooseActivity = this;
         
-        Intent intent = getIntent();
+        final Intent intent = getIntent();
         QuestionType=intent.getIntExtra("type", -1);
         
         list=new ArrayList<Map<String,Object>>(); 
@@ -44,9 +45,8 @@ public class NoteBookChooseActivity extends Activity{
         qtb= (QuestionTabBar) this.findViewById(R.id.QuestionTabBar);//$$$$$$
         qtb.getBackButton().setOnClickListener(new View.OnClickListener() {   //$$$$$$
             public void onClick(View v) { 
-            	Intent intent = new Intent();
-            	intent.setClass(NoteBookChooseActivity.this,NoteBookActivity.class);
-            	startActivityForResult(intent,0);
+            	noteBookChooseActivity.setResult(RESULT_OK, intent);
+            	noteBookChooseActivity.finish();
             }   
         }); 
         
