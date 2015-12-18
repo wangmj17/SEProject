@@ -82,7 +82,7 @@ public class NoteBookListItem extends BaseAdapter{
         exerciseIndex=Integer.parseInt(index[1]);
         questionIndex=Integer.parseInt(index[2]);
         category=Integer.parseInt(index[0]);
-        listitem.questiontext.setText((String)data.get(position).get("qusetionIndex")); //(String)data.get(position).get("questiontext")
+        listitem.questiontext.setText((String)data.get(position).get("questiontext")); //(String)data.get(position).get("questiontext")
         listitem.delete.setOnClickListener(new View.OnClickListener() {   
             @Override  
             public void onClick(View v) {   
