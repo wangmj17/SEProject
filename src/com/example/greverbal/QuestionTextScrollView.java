@@ -17,31 +17,31 @@ import android.widget.TextView;
 	private TextView questionText;
 	private TextView doubleClickText;
 	private ScrollView textScrollView;
-	
+
 	public QuestionTextScrollView(Context context) {  
-        this(context, null);  
-    }  
-  
-    public QuestionTextScrollView(Context context, AttributeSet attrs) {  
-        super(context, attrs);  
-        // 导入布局  
-        LayoutInflater.from(context).inflate(R.layout.questiontextscrollview, this, true);  
-        questionText = (TextView) this.findViewById(R.id.QuestionText);  
-        textScrollView = (ScrollView) this.findViewById(R.id.TextScrollView);
-        doubleClickText = (TextView) this.findViewById(R.id.DoubleClickText);  
-          
-    }
-    
-    public void setText(String text){
-    	questionText.setText(text);
-    }
-    
-    public void setTextHeight(int height){
-    	ScrollView.LayoutParams lp=(ScrollView.LayoutParams)questionText.getLayoutParams();
-    	lp.height = height;
-    	questionText.setLayoutParams(lp);
-    }
-    
+		this(context, null);  
+	}  
+
+	public QuestionTextScrollView(Context context, AttributeSet attrs) {  
+		super(context, attrs);  
+		// 导入布局  
+		LayoutInflater.from(context).inflate(R.layout.questiontextscrollview, this, true);  
+		questionText = (TextView) this.findViewById(R.id.QuestionText);  
+		textScrollView = (ScrollView) this.findViewById(R.id.TextScrollView);
+		doubleClickText = (TextView) this.findViewById(R.id.DoubleClickText);  
+
+	}
+
+	public void setText(String text){
+		questionText.setText(text);
+	}
+
+	public void setTextHeight(int height){
+		ScrollView.LayoutParams lp=(ScrollView.LayoutParams)questionText.getLayoutParams();
+		lp.height = height;
+		questionText.setLayoutParams(lp);
+	}
+
 	public TextView getQuestionText() {
 		return questionText;
 	}
@@ -65,5 +65,5 @@ import android.widget.TextView;
 	public void setTextScrollView(ScrollView textScrollView) {
 		this.textScrollView = textScrollView;
 	}
-    
+
 }

@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <RelativeLayout xmlns:Android="http://schemas.android.com/apk/res/android"
-   
+    Android:id="@+id/NotebookRelative"
     Android:layout_width="fill_parent"
-    Android:layout_height="wrap_content" 
-  	Android:id="@+id/NotebookRelative" >
-  	
+    Android:layout_height="wrap_content" >
+
     <LinearLayout
-	    Android:layout_width="wrap_content"
-	    Android:layout_height="wrap_content"
-	    Android:layout_alignParentTop="true"
-	    Android:layout_alignParentLeft="true"
-	    Android:orientation="horizontal" >
+        Android:layout_width="wrap_content"
+        Android:layout_height="wrap_content"
+        Android:layout_alignParentLeft="true"
+        Android:layout_alignParentTop="true"
+        Android:orientation="horizontal" >
 
         <TextView
             Android:id="@+id/NO"
@@ -18,33 +17,36 @@
             Android:layout_height="wrap_content"
             Android:layout_marginTop="10dp"
             Android:textSize="20dp" />
-  
-   		 <TextView Android:id="@+id/Question"    
-   			Android:layout_width="wrap_content"  
-        	Android:layout_height="wrap_content" 
-        	Android:layout_marginTop="10dp"
-        	Android:maxLength="12"
-        	Android:textSize="18dp" />  
-		</LinearLayout> 
-	
-	<LinearLayout
-	    Android:layout_width="wrap_content"
-	    Android:layout_height="wrap_content"
-	    Android:layout_alignParentTop="true"
-	    Android:layout_alignParentRight="true"
-	    Android:orientation="horizontal" >
-        
-	    <Button  Android:id="@+id/test"    
-	        Android:layout_width="wrap_content"  
-	        Android:layout_height="wrap_content"  
-	        Android:text="答题"     
-	        Android:layout_gravity="right"/> 
-	 
-	    <Button  Android:id="@+id/delete"    
-	        Android:layout_width="wrap_content"  
-	        Android:layout_height="wrap_content"
-			Android:text="删除"   
-	      	Android:layout_gravity="right"/>  
-	  </LinearLayout>  
-   
+
+        <TextView
+            Android:id="@+id/Question"
+            Android:layout_width="wrap_content"
+            Android:layout_height="wrap_content"
+            Android:layout_marginTop="10dp"
+            Android:maxLength="12"
+            Android:textSize="18dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        Android:layout_width="wrap_content"
+        Android:layout_height="wrap_content"
+        Android:layout_alignParentRight="true"
+        Android:layout_alignParentTop="true"
+        Android:orientation="horizontal" >
+
+        <Button
+            Android:id="@+id/test"
+            Android:layout_width="wrap_content"
+            Android:layout_height="wrap_content"
+            Android:layout_gravity="right"
+            Android:text="答题" />
+
+        <Button
+            Android:id="@+id/delete"
+            Android:layout_width="wrap_content"
+            Android:layout_height="wrap_content"
+            Android:layout_gravity="right"
+            Android:text="删除" />
+    </LinearLayout>
+
 </RelativeLayout>

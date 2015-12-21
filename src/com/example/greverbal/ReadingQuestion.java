@@ -12,10 +12,10 @@ public class ReadingQuestion {
 	public int type;
 	public java.lang.String text;
 	public int numOfOptions;
-	
+
 	public ReadingQuestion(){
 	}
-	
+
 	public ReadingQuestion(Dict question){
 		exerciseIndex = question.getConfigurationInteger("exerciseIndex").getValue();
 		questionIndex = question.getConfigurationInteger("questionIndex").getValue();
@@ -26,7 +26,7 @@ public class ReadingQuestion {
 		questiontext = question.getConfiguration("question").getValue();
 		numOfOptions = optionsArray.size();
 		options = new java.lang.String[numOfOptions];
-		
+
 		for(int i = 0; i < numOfOptions; i++){
 			options[i] = ((com.longevitysoft.android.xml.plist.domain.String) optionsArray.get(i)).getValue();
 		}

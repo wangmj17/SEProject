@@ -12,25 +12,25 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
- 
+
 public class NoteBookButton extends RelativeLayout{
 	private TextView optionText;
 	public Button button;
 	private int questionType;
-	
+
 	public NoteBookButton(Context context){
 		this(context, null);  
 	}
-	
+
 	public NoteBookButton(Context context, AttributeSet attrs) {
 		super(context, attrs);
 		// 导入布局  
-        LayoutInflater.from(context).inflate(R.layout.notebookbutton, this, true);
+		LayoutInflater.from(context).inflate(R.layout.notebookbutton, this, true);
 		button = (Button) this.findViewById(R.id.bt);
-		
+
 	}
-  
-	 
+
+
 	public void setButtonBackground(int questionType){
 		this.questionType = questionType;
 		if(questionType == 1){
@@ -57,8 +57,8 @@ public class NoteBookButton extends RelativeLayout{
 		else {
 			button.setBackgroundResource(R.drawable.jiuxuansan);
 		}
-		
+
 	}
-	
+
 
 }

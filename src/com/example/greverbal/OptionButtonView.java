@@ -23,11 +23,11 @@ public class OptionButtonView extends RelativeLayout {
 	private String option_explanation;
 	private boolean explanationShowed = false;  
 	private Context context;
-	
+
 	public OptionButtonView(Context context, AttributeSet attrs) {
 		super(context, attrs);
 		// 导入布局  
-        LayoutInflater.from(context).inflate(R.layout.optionbuttonview, this, true);
+		LayoutInflater.from(context).inflate(R.layout.optionbuttonview, this, true);
 		optionText = (TextView) this.findViewById(R.id.OptionText);
 		optionImage = (ImageView) this.findViewById(R.id.OptionImage);
 		addtoWordBook = (Button) this.findViewById(R.id.AddtoWordBook);
@@ -36,11 +36,11 @@ public class OptionButtonView extends RelativeLayout {
 		selected = false;
 
 	}
-	
+
 	public void setAddtoWordBookButton(final WordBookHandler wordBookHandler){
-		
+
 		this.wordBookHandler = wordBookHandler;
-		
+
 		addtoWordBook.setOnClickListener(new OnClickListener(){
 
 			@Override
@@ -63,9 +63,9 @@ public class OptionButtonView extends RelativeLayout {
 						wordBookHandler.addWord(word, explanation);
 						wordBookDialog.dismiss();
 					}
-					
+
 				});
-				
+
 				wordBookDialog.setOnCancelListener(new OnClickListener(){
 
 					@Override
@@ -73,24 +73,24 @@ public class OptionButtonView extends RelativeLayout {
 						// TODO Auto-generated method stub
 						wordBookDialog.dismiss();
 					}
-					
+
 				});
-				
+
 				wordBookDialog.show();
 			}
-			
+
 		});
 	}
-	
+
 	public void setOptionText(String text){
 		option_text = text;
 		optionText.setText(text);
 	}
-	
+
 	public void setOptionExplanation(String explanation){
 		option_explanation = explanation;
 	}
-	
+
 	public void showOrHideExplanation(){
 		explanationShowed = !explanationShowed;
 		if (explanationShowed){
@@ -102,17 +102,17 @@ public class OptionButtonView extends RelativeLayout {
 			addtoWordBook.setVisibility(View.GONE);
 		}
 	}
-	
+
 	public void showExplanation(){
 		explanationShowed = true;
 		optionText.setText(option_text + " " + option_explanation);
 		addtoWordBook.setVisibility(View.VISIBLE);
 	}
-	
+
 	public void setTextSize(int textSize){
 		optionText.setTextSize(textSize);
 	}
-	
+
 	public void setOptionImage(boolean isRadio){
 		this.isRadio = isRadio;
 		if(isRadio){
@@ -122,7 +122,7 @@ public class OptionButtonView extends RelativeLayout {
 			optionImage.setBackgroundResource(R.drawable.check_button);
 		}
 	}
-	
+
 	public void changeSelectedStatus(){
 		selected = !selected;	
 		if (isRadio){
@@ -142,9 +142,9 @@ public class OptionButtonView extends RelativeLayout {
 			}
 		}
 	}
-	
+
 	public void setAddtoWordBookImage(Context context){
-		
+
 		if (wordBookHandler.find(option_text.substring(3), option_explanation) != -1){
 			addtoWordBook.setBackgroundResource(R.drawable.added);
 			addtoWordBook.setEnabled(false);
@@ -154,10 +154,10 @@ public class OptionButtonView extends RelativeLayout {
 			addtoWordBook.setLayoutParams(lp);
 		}
 	}
-	
+
 	public int dip2px(Context context, float dipValue){
-    	float m=context.getResources().getDisplayMetrics().density ;
-    	return (int)(dipValue * m + 0.5f) ;
-    }
+		float m=context.getResources().getDisplayMetrics().density ;
+		return (int)(dipValue * m + 0.5f) ;
+	}
 
 }

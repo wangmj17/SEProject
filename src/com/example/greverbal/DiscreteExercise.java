@@ -6,13 +6,13 @@ import com.longevitysoft.android.xml.plist.domain.Array;
 import com.longevitysoft.android.xml.plist.domain.Dict;
 
 public class DiscreteExercise {
-	
+
 	public DiscreteQuestion[] discreteQuestions;
 	public int questionCount;
-	
+
 	public DiscreteExercise(){
 	}
-	
+
 	public DiscreteExercise(ArrayList<DiscreteQuestion> list){
 		questionCount = list.size();
 		discreteQuestions = new DiscreteQuestion[questionCount];
@@ -20,7 +20,7 @@ public class DiscreteExercise {
 			discreteQuestions[i] = (DiscreteQuestion) list.get(i);
 		}
 	}
-	
+
 	public DiscreteExercise(Array exercise){
 		questionCount = exercise.size();
 		discreteQuestions = new DiscreteQuestion[questionCount];

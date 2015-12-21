@@ -11,22 +11,22 @@ public class QuestionTabBar extends RelativeLayout {
 	private Button backButton;
 	private TextView tabBarTitle;
 	public QuestionTabBar(Context context) {  
-        this(context, null);  
-    }  
-  
-    public QuestionTabBar(Context context, AttributeSet attrs) {  
-        super(context, attrs);  
-        
-        LayoutInflater.from(context).inflate(R.layout.questiontabbar, this, true);  
-        backButton = (Button) this.findViewById(R.id.BackButton);  
-        tabBarTitle = (TextView) this.findViewById(R.id.TabBarTitle);  
-  
-    }
-    
-    public void setTextViewText(String text) {  
-        tabBarTitle.setText(text);  
-    }  
-    
+		this(context, null);  
+	}  
+
+	public QuestionTabBar(Context context, AttributeSet attrs) {  
+		super(context, attrs);  
+
+		LayoutInflater.from(context).inflate(R.layout.questiontabbar, this, true);  
+		backButton = (Button) this.findViewById(R.id.BackButton);  
+		tabBarTitle = (TextView) this.findViewById(R.id.TabBarTitle);  
+
+	}
+
+	public void setTextViewText(String text) {  
+		tabBarTitle.setText(text);  
+	}  
+
 	public Button getBackButton() {
 		return backButton;
 	}

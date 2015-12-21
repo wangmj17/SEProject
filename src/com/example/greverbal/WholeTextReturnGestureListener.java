@@ -4,14 +4,14 @@ import android.view.MotionEvent;
 import android.view.GestureDetector.SimpleOnGestureListener;
 
 public class WholeTextReturnGestureListener extends SimpleOnGestureListener {
-	
+
 	public WholeTextReturnGestureListener(){
 		super();
 	}
-	
+
 	@Override  
-    public boolean onDoubleTap(MotionEvent e) {  
+	public boolean onDoubleTap(MotionEvent e) {  
 		WholeTextActivity.hidePage();
-        return super.onDoubleTap(e);  
-    } 
+		return super.onDoubleTap(e);  
+	} 
 }

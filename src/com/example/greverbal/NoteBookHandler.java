@@ -10,38 +10,38 @@ import android.util.Log;
 public class NoteBookHandler {
 	private SharedPreferences userHistory;
 	private String wrongQuestions;
-	
+
 	private List<Integer[]> questionList;//用于搜索错题本题型
-	
+
 	public NoteBookHandler(Context context){
-		
+
 		userHistory= context.getSharedPreferences("test",
 				Activity.MODE_PRIVATE);
 		wrongQuestions = userHistory.getString("wrongQuestions", "");
-		
+
 		questionList = new ArrayList<Integer[]>();
-		
-		
+
+
 	}
-		
+
 	public void addQuestion(int exerciseIndex, int questionIndex, int category){
-		
+
 		if (wrongQuestions.length() > 0){
 			wrongQuestions = exerciseIndex + "," + questionIndex + "," + category + "," + wrongQuestions;
 		}
 		else{
 			wrongQuestions = exerciseIndex + "," + questionIndex + "," + category;
 		}
-		
+
 		SharedPreferences.Editor editor = userHistory.edit();
 		editor.putString("wrongQuestions", wrongQuestions);
 		//editor.putString("wrongQuestions", "");
 		editor.commit(); 
-		
+
 	}	
-	
+
 	public void deleteQuestion(int exerciseIndex, int questionIndex, int category){
-		
+
 		String[] questionArray = wrongQuestions.split(",");
 		for (int i = 0; i < questionArray.length; i += 3){
 			if (questionArray[i].equals(String.valueOf(exerciseIndex)) && 
@@ -61,14 +61,14 @@ public class NoteBookHandler {
 				else
 					wrongQuestions = questionArray[i];
 			}
-			
+
 		}
-		
+
 		SharedPreferences.Editor editor = userHistory.edit();
 		editor.putString("wrongQuestions", wrongQuestions);
 		editor.commit(); 
 	}
-	
+
 	public List<Integer[]> findCategory(int category){ 
 		questionList.clear();
 		if (wrongQuestions.length() > 0){
@@ -85,7 +85,7 @@ public class NoteBookHandler {
 		}
 		return questionList;
 	}
-	
+
 	public int find(int exerciseIndex, int questionIndex, int category){
 		if (wrongQuestions.length() > 0){
 			String[] questionArray = wrongQuestions.split(",");
@@ -101,11 +101,11 @@ public class NoteBookHandler {
 	}
 
 	public NoteBook getNoteBook(){
-		
+
 		String[] questionArray = wrongQuestions.split(",");
 
 		return new NoteBook(questionArray);
-		
+
 	}
-	
+
 }

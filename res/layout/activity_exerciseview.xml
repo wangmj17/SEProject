@@ -1,229 +1,246 @@
-<?xml version="1.0" encoding="utf-8"?>  
+<?xml version="1.0" encoding="utf-8"?>
 
-<!-- 这里是根节点布局 --> 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
-    android:layout_width="fill_parent"    
-    android:layout_height="fill_parent"  
-    >   
-    
-    
-    <!-- 第一个Tab中得layout -->  
-    <TableLayout android:id="@+id/frist_tab_tablelayout"  
-        android:layout_width="fill_parent"    
-        android:layout_height="fill_parent"  
-        android:orientation="vertical"    
-        >  
+<!-- 这里是根节点布局 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <!-- 第一个Tab中得layout -->
+
+    <TableLayout
+        android:id="@+id/frist_tab_tablelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
         <com.example.greverbal.QuestionTabBar
-       	 	android:id="@+id/QuestionTabBar1"  
-       	 	android:layout_height="wrap_content"  
-        	android:layout_width="fill_parent"  
-       		android:layout_alignParentTop="true"  
-    	/>
-         
-         <TableRow>
-		     	<com.example.greverbal.TabButton
-		       		android:id="@+id/mybutton11"  
-		       		android:layout_width="match_parent"
-               		android:layout_height="match_parent"
-               		android:layout_weight="1"
-               		android:layout_marginRight="0dip"
-               		android:layout_marginTop="50dp"
-		      	/>	
-		 </TableRow> 
-		 <TableRow>
-		 		<com.example.greverbal.TabButton
-		       		android:id="@+id/mybutton12"  
-		       		android:layout_width="fill_parent"
-               		android:layout_height="fill_parent"
-               		android:layout_weight="1"
-               		android:layout_marginRight="0dip"
-		      	/>	
-		 </TableRow> 
-		 <TableRow>
-		 		<com.example.greverbal.TabButton
-		       		android:id="@+id/mybutton13"  
-		       		android:layout_width="fill_parent"
-               		android:layout_height="fill_parent"
-               		android:layout_weight="1"
-               		android:layout_marginRight="0dip"
-		      	/>	
-		 </TableRow> 
-		 <TableRow>
-		 		<com.example.greverbal.TabButton
-		       		android:id="@+id/mybutton14"  
-		       		android:layout_width="fill_parent"
-               		android:layout_height="fill_parent"
-               		android:layout_weight="1"
-               		android:layout_marginRight="0dip"
-		      	/>	
-		 </TableRow> 
-		 <TableRow>
-		 		<com.example.greverbal.TabButton
-		       		android:id="@+id/mybutton15"  
-		       		android:layout_width="fill_parent"
-               		android:layout_height="fill_parent"
-               		android:layout_weight="1"
-               		android:layout_marginRight="0dip"
-		      	/>	
-		 </TableRow> 
-		 <TableRow>
-		 		<com.example.greverbal.TabButton
-		       		android:id="@+id/mybutton16"  
-		       		android:layout_width="fill_parent"
-               		android:layout_height="fill_parent"
-               		android:layout_weight="1"
-               		android:layout_marginRight="0dip"
-		      	/>	
-		 </TableRow> 
-		 <TableRow>
-		 		<com.example.greverbal.TabButton
-		       		android:id="@+id/mybutton17"  
-		       		android:layout_width="fill_parent"
-               		android:layout_height="fill_parent"
-               		android:layout_weight="1"
-               		android:layout_marginRight="0dip"
-		      	/>	
-		 </TableRow> 
-		 <TableRow>
-		 		<com.example.greverbal.TabButton
-		       		android:id="@+id/mybutton18"  
-		       		android:layout_width="fill_parent"
-               		android:layout_height="fill_parent"
-               		android:layout_weight="1"
-               		android:layout_marginRight="0dip"
-		      	/>	
-		 </TableRow> 
-		 <TableRow>
-		 		<com.example.greverbal.TabButton
-		       		android:id="@+id/mybutton19"  
-		       		android:layout_width="fill_parent"
-               		android:layout_height="fill_parent"
-               		android:layout_weight="1"
-               		android:layout_marginRight="0dip"
-		      	/>	
-		 </TableRow> 
-		 <TableRow>
-		 		<com.example.greverbal.TabButton
-		       		android:id="@+id/mybutton110"  
-		       		android:layout_width="fill_parent"
-               		android:layout_height="fill_parent"
-               		android:layout_weight="1"
-               		android:layout_marginRight="0dip"
-		      	/>	
-		 </TableRow> 
-    </TableLayout> 
-     
-    <!-- 第二个Tab中得layout -->  
-    <TableLayout android:id="@+id/second_tab_tablelayout"  
-        android:layout_width="fill_parent"    
-        android:layout_height="fill_parent"  
-        android:orientation="vertical"    
-        > 
-        <com.example.greverbal.QuestionTabBar
-       	 	android:id="@+id/QuestionTabBar2"  
-       	 	android:layout_height="wrap_content"  
-        	android:layout_width="fill_parent"  
-       		android:layout_alignParentTop="true"  
-    	/> 
-         
-        <TableRow>
-		     	<com.example.greverbal.TabButton
-		       		android:id="@+id/mybutton21"  
-		       		android:layout_width="match_parent"
-               		android:layout_height="match_parent"
-               		android:layout_weight="1"
-               		android:layout_marginRight="0dip"
-               		android:layout_marginTop="50dp"
-		      	/>	
-		 </TableRow> 
-		 <TableRow>
-		 		<com.example.greverbal.TabButton
-		       		android:id="@+id/mybutton22"  
-		       		android:layout_width="fill_parent"
-               		android:layout_height="fill_parent"
-               		android:layout_weight="1"
-               		android:layout_marginRight="0dip"
-		      	/>	
-		 </TableRow> 
-		 <TableRow>
-		 		<com.example.greverbal.TabButton
-		       		android:id="@+id/mybutton23"  
-		       		android:layout_width="fill_parent"
-               		android:layout_height="fill_parent"
-               		android:layout_weight="1"
-               		android:layout_marginRight="0dip"
-		      	/>	
-		 </TableRow> 
-		 <TableRow>
-		 		<com.example.greverbal.TabButton
-		       		android:id="@+id/mybutton24"  
-		       		android:layout_width="fill_parent"
-               		android:layout_height="fill_parent"
-               		android:layout_weight="1"
-               		android:layout_marginRight="0dip"
-		      	/>	
-		 </TableRow> 
-		 <TableRow>
-		 		<com.example.greverbal.TabButton
-		       		android:id="@+id/mybutton25"  
-		       		android:layout_width="fill_parent"
-               		android:layout_height="fill_parent"
-               		android:layout_weight="1"
-               		android:layout_marginRight="0dip"
-		      	/>	
-		 </TableRow> 
-		 <TableRow>
-		 		<com.example.greverbal.TabButton
-		       		android:id="@+id/mybutton26"  
-		       		android:layout_width="fill_parent"
-               		android:layout_height="fill_parent"
-               		android:layout_weight="1"
-               		android:layout_marginRight="0dip"
-		      	/>	
-		 </TableRow> 
-		 <TableRow>
-		 		<com.example.greverbal.TabButton
-		       		android:id="@+id/mybutton27"  
-		       		android:layout_width="fill_parent"
-               		android:layout_height="fill_parent"
-               		android:layout_weight="1"
-               		android:layout_marginRight="0dip"
-		      	/>	
-		 </TableRow> 
-		 <TableRow>
-		 		<com.example.greverbal.TabButton
-		       		android:id="@+id/mybutton28"  
-		       		android:layout_width="fill_parent"
-               		android:layout_height="fill_parent"
-               		android:layout_weight="1"
-               		android:layout_marginRight="0dip"
-		      	/>	
-		 </TableRow> 
-		 <TableRow>
-		 		<com.example.greverbal.TabButton
-		       		android:id="@+id/mybutton29"  
-		       		android:layout_width="fill_parent"
-               		android:layout_height="fill_parent"
-               		android:layout_weight="1"
-               		android:layout_marginRight="0dip"
-		      	/>	
-		 </TableRow> 
-		 <TableRow>
-		 		<com.example.greverbal.TabButton
-		       		android:id="@+id/mybutton210"  
-		       		android:layout_width="fill_parent"
-               		android:layout_height="fill_parent"
-               		android:layout_weight="1"
-               		android:layout_marginRight="0dip"
-		      	/>	
-		 </TableRow>  
-    </TableLayout>  
-    
-    <TabWidget
-            android:id="@android:id/tabs"
+            android:id="@+id/QuestionTabBar1"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content" 
-            android:layout_alignParentBottom="true" />
-     
-       
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" />
+
+        <TableRow>
+
+            <com.example.greverbal.TabButton
+                android:id="@+id/mybutton11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="0dip"
+                android:layout_marginTop="50dp"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow>
+
+            <com.example.greverbal.TabButton
+                android:id="@+id/mybutton12"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="0dip"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow>
+
+            <com.example.greverbal.TabButton
+                android:id="@+id/mybutton13"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="0dip"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow>
+
+            <com.example.greverbal.TabButton
+                android:id="@+id/mybutton14"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="0dip"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow>
+
+            <com.example.greverbal.TabButton
+                android:id="@+id/mybutton15"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="0dip"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow>
+
+            <com.example.greverbal.TabButton
+                android:id="@+id/mybutton16"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="0dip"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow>
+
+            <com.example.greverbal.TabButton
+                android:id="@+id/mybutton17"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="0dip"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow>
+
+            <com.example.greverbal.TabButton
+                android:id="@+id/mybutton18"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="0dip"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow>
+
+            <com.example.greverbal.TabButton
+                android:id="@+id/mybutton19"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="0dip"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow>
+
+            <com.example.greverbal.TabButton
+                android:id="@+id/mybutton110"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="0dip"
+                android:layout_weight="1" />
+        </TableRow>
+    </TableLayout>
+
+    <!-- 第二个Tab中得layout -->
+
+    <TableLayout
+        android:id="@+id/second_tab_tablelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <com.example.greverbal.QuestionTabBar
+            android:id="@+id/QuestionTabBar2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" />
+
+        <TableRow>
+
+            <com.example.greverbal.TabButton
+                android:id="@+id/mybutton21"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="0dip"
+                android:layout_marginTop="50dp"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow>
+
+            <com.example.greverbal.TabButton
+                android:id="@+id/mybutton22"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="0dip"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow>
+
+            <com.example.greverbal.TabButton
+                android:id="@+id/mybutton23"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="0dip"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow>
+
+            <com.example.greverbal.TabButton
+                android:id="@+id/mybutton24"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="0dip"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow>
+
+            <com.example.greverbal.TabButton
+                android:id="@+id/mybutton25"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="0dip"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow>
+
+            <com.example.greverbal.TabButton
+                android:id="@+id/mybutton26"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="0dip"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow>
+
+            <com.example.greverbal.TabButton
+                android:id="@+id/mybutton27"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="0dip"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow>
+
+            <com.example.greverbal.TabButton
+                android:id="@+id/mybutton28"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="0dip"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow>
+
+            <com.example.greverbal.TabButton
+                android:id="@+id/mybutton29"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="0dip"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow>
+
+            <com.example.greverbal.TabButton
+                android:id="@+id/mybutton210"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="0dip"
+                android:layout_weight="1" />
+        </TableRow>
+    </TableLayout>
+
+    <TabWidget
+        android:id="@android:id/tabs"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
 </RelativeLayout>

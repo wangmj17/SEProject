@@ -1,63 +1,57 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
-    	android:layout_height="wrap_content"
-        android:layout_width="match_parent" 
-        android:background="#00000000"   
-        >    
-    
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000" >
+
     <TextView
+        android:id="@+id/AddToWordBookTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true"
-        android:text="加入单词本"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="5dip"
-        android:id="@+id/AddToWordBookTitle"
-        />
-    
+        android:text="加入单词本" />
+
     <EditText
         android:id="@+id/WordEditText"
         android:layout_width="fill_parent"
         android:layout_height="40dip"
+        android:layout_below="@+id/AddToWordBookTitle"
         android:layout_marginLeft="5dip"
         android:layout_marginRight="5dip"
-        android:layout_marginTop="5dip"
-        android:layout_below="@+id/AddToWordBookTitle"
-        />
-    
+        android:layout_marginTop="5dip" />
+
     <EditText
         android:id="@+id/ExplanationEditText"
         android:layout_width="fill_parent"
         android:layout_height="40dip"
+        android:layout_below="@+id/WordEditText"
         android:layout_marginLeft="5dip"
         android:layout_marginRight="5dip"
-        android:layout_marginTop="5dip"
-        android:layout_below="@+id/WordEditText"
-        />
-    
+        android:layout_marginTop="5dip" />
+
     <Button
         android:id="@+id/WordBookConfirmButton"
-        android:text="确定"
-        android:textSize="15sp"
         android:layout_width="80dip"
         android:layout_height="40dip"
-        android:layout_marginTop="5dip"
-        android:layout_marginBottom="10dip"
-        android:layout_marginLeft="20dip"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/ExplanationEditText"
-        />
-    
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="5dip"
+        android:text="确定"
+        android:textSize="15sp" />
+
     <Button
         android:id="@+id/WordBookCancelButton"
-        android:text="取消"
-        android:textSize="15sp"
         android:layout_width="80dip"
         android:layout_height="40dip"
-        android:layout_marginTop="5dip"
-        android:layout_marginBottom="10dip"
-        android:layout_marginRight="20dip"
         android:layout_alignParentRight="true"
         android:layout_below="@+id/ExplanationEditText"
-        />
-        
-</RelativeLayout>   
+        android:layout_marginBottom="10dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="5dip"
+        android:text="取消"
+        android:textSize="15sp" />
+
+</RelativeLayout>

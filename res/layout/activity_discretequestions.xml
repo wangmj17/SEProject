@@ -3,49 +3,44 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.greverbal.DiscreteQuestionsActivity" >
-    
+
     <com.example.greverbal.QuestionTabBar
-        android:id="@+id/QuestionTabBar"  
-        android:layout_height="wrap_content"  
-        android:layout_width="fill_parent"  
-        android:layout_alignParentTop="true"  
-        />
-    
-    <com.example.greverbal.QuestionBottomBar 
-        android:layout_height="wrap_content"
-        android:layout_width="fill_parent"  
-        android:layout_alignParentBottom="true"
-        android:id="@+id/QuestionBottomBar"
-        />
-    
-    <ScrollView
-        android:layout_height="fill_parent"
+        android:id="@+id/QuestionTabBar"
         android:layout_width="fill_parent"
-        android:background="#FFFFFF"
-        android:scrollbars="vertical"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <com.example.greverbal.QuestionBottomBar
+        android:id="@+id/QuestionBottomBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <ScrollView
         android:id="@+id/MainScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/QuestionBottomBar"
         android:layout_below="@+id/QuestionTabBar"
-        android:layout_above="@+id/QuestionBottomBar">
-        
+        android:background="#FFFFFF"
+        android:scrollbars="vertical" >
+
         <RelativeLayout
-            android:layout_height="wrap_content"
+            android:id="@+id/MainScrollViewLayout"
             android:layout_width="fill_parent"
-            android:id="@+id/MainScrollViewLayout">
-            
-    		<com.example.greverbal.QuestionTextScrollView
-        		android:id="@+id/QuestionTextScrollView"
-        		android:layout_width="fill_parent"
-        		android:layout_height="wrap_content"
-        		android:layout_alignParentTop="true"
-				/>
-    		
-    		<com.example.greverbal.AnswerView
-    		    android:layout_width="fill_parent"
-        		android:layout_height="wrap_content"
-    		    android:id="@+id/AnswerView"/>
-    		
-    		</RelativeLayout>
-    	
-    	</ScrollView>
-    	  
+            android:layout_height="wrap_content" >
+
+            <com.example.greverbal.QuestionTextScrollView
+                android:id="@+id/QuestionTextScrollView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true" />
+
+            <com.example.greverbal.AnswerView
+                android:id="@+id/AnswerView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </ScrollView>
+
 </RelativeLayout>

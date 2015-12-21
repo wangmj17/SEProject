@@ -8,10 +8,10 @@ import com.longevitysoft.android.xml.plist.domain.Dict;
 public class ReadingExercise {
 	public ReadingQuestion[] readingQuestions;
 	public int questionCount;
-	
+
 	public ReadingExercise(){
 	}
-	
+
 	public ReadingExercise(ArrayList<ReadingQuestion> list){
 		questionCount = list.size();
 		readingQuestions = new ReadingQuestion[questionCount];
@@ -19,7 +19,7 @@ public class ReadingExercise {
 			readingQuestions[i] = (ReadingQuestion) list.get(i);
 		}
 	}
-	
+
 	public ReadingExercise(Array exercise){
 		questionCount = exercise.size();
 		readingQuestions = new ReadingQuestion[questionCount];

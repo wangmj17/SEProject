@@ -10,34 +10,34 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 public class AnswerView extends RelativeLayout {
-	
+
 	private TextView yourAnswer;
 	private TextView rightAnswer;
 	private Button addtoNoteBook;
 	private Context context;
-	
+
 	public AnswerView(Context context) {  
-        this(context, null);  
-    }  
-	
+		this(context, null);  
+	}  
+
 	public AnswerView(Context context, AttributeSet attrs) {
 		super(context, attrs);
 		// 导入布局  
-        LayoutInflater.from(context).inflate(R.layout.answerview, this, true);
+		LayoutInflater.from(context).inflate(R.layout.answerview, this, true);
 		yourAnswer = (TextView) this.findViewById(R.id.YourAnswer);
 		rightAnswer = (TextView) this.findViewById(R.id.RightAnswer);
 		addtoNoteBook = (Button) this.findViewById(R.id.AddtoNoteBook);
 		this.context = context;
 	}
-	
+
 	public void setYourAnswerContent(String text){
 		yourAnswer.setText("Your Answer: " + text);
 	}
-	
+
 	public void setRightAnswerContent(String text){
 		rightAnswer.setText("Right Answer: " + text);
 	}
-	
+
 	public void setAddtoNoteBookAction(final int exerciseIndex, final int questionIndex, final int category, final NoteBookHandler noteBookHandler){
 		addtoNoteBook.setOnClickListener(new OnClickListener(){
 
@@ -52,13 +52,13 @@ public class AnswerView extends RelativeLayout {
 				lp.width = dip2px(context, 40);
 				addtoNoteBook.setLayoutParams(lp);
 			}
-			
+
 		});
-		
+
 	}
-	
+
 	public void setAddtoNoteBookImage(Context context,int exerciseIndex, int questionIndex, int category, NoteBookHandler noteBookHandler){
-		
+
 		if (noteBookHandler.find(exerciseIndex, questionIndex, category) != -1){
 			addtoNoteBook.setBackgroundResource(R.drawable.added);
 			addtoNoteBook.setEnabled(false);
@@ -76,9 +76,9 @@ public class AnswerView extends RelativeLayout {
 			addtoNoteBook.setLayoutParams(lp);
 		}
 	}
-	
+
 	public int dip2px(Context context, float dipValue){
-    	float m=context.getResources().getDisplayMetrics().density ;
-    	return (int)(dipValue * m + 0.5f) ;
-    }
+		float m=context.getResources().getDisplayMetrics().density ;
+		return (int)(dipValue * m + 0.5f) ;
+	}
 }

@@ -14,10 +14,10 @@ public class DiscreteQuestion {
 	public int type;
 	public java.lang.String text;
 	public int numOfOptions;
-	
+
 	public DiscreteQuestion(){
 	}
-	
+
 	public DiscreteQuestion(Dict question){
 		exerciseIndex = question.getConfigurationInteger("exerciseIndex").getValue();
 		questionIndex = question.getConfigurationInteger("questionIndex").getValue();
@@ -26,15 +26,15 @@ public class DiscreteQuestion {
 		answer = question.getConfiguration("answer").getValue();
 		type = question.getConfigurationInteger("type").getValue();
 		text = question.getConfiguration("text").getValue();
-		
+
 		numOfOptions = explanationsArray.size();
 		explanations = new java.lang.String[numOfOptions];
 		options = new java.lang.String[numOfOptions];
-		
+
 		for(int i = 0; i < numOfOptions; i++){
 			explanations[i] = ((com.longevitysoft.android.xml.plist.domain.String) explanationsArray.get(i)).getValue();
 			options[i] = ((com.longevitysoft.android.xml.plist.domain.String) optionsArray.get(i)).getValue();
 		}
 	}
-	
+
 }

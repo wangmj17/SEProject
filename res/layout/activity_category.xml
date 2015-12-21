@@ -2,190 +2,196 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.greverbal.CategoryActivity"  android:orientation="vertical">    
-        
-    <com.example.greverbal.QuestionTabBar 
+    android:orientation="vertical"
+    tools:context="com.example.greverbal.CategoryActivity" >
 
-        android:layout_height="wrap_content"  
-        android:layout_width="fill_parent"  
+    <com.example.greverbal.QuestionTabBar
         android:id="@+id/CategoryTabBar"
-      />
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
 
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="14dip"
-    android:paddingLeft="25dip"
-    android:paddingRight="25dip"
-    android:paddingTop="14dip"
-    android:orientation="vertical">    
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/yuedu"
-        android:text="阅读"
-        android:textSize="20dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"/>
-    <View
-        android:layout_width="fill_parent"
-        android:layout_height="10dip"
-        />
-    <View
-        android:layout_width="fill_parent"
-        android:layout_height="2dip"
-        android:background="#FF909090"
-        />
-    <View
-        android:layout_width="fill_parent"
-        android:layout_height="10dip"
-        
-        />
     <LinearLayout
-        android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/linearLayout"
-        android:layout_marginBottom="0dp"
-        android:orientation="horizontal">
+        android:orientation="vertical"
+        android:paddingBottom="14dip"
+        android:paddingLeft="25dip"
+        android:paddingRight="25dip"
+        android:paddingTop="14dip" >
 
-        <ImageButton
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:id="@+id/Category11"
-            android:scaleType="fitXY"
-            android:src="@drawable/mainidea" />
+        <TextView
+            android:id="@+id/yuedu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="阅读"
+            android:textSize="20dp" />
+
         <View
-            android:layout_width="15dip"
-            android:layout_height="match_parent"
-             />
-        <ImageButton
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:scaleType="fitXY"
-            android:id="@+id/Category12"
-            android:src="@drawable/detail" />
-    </LinearLayout>
-    <View
-        android:layout_width="fill_parent"
-        android:layout_height="5dip"
-         />
-    <LinearLayout
-        android:layout_weight="1"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/linearLayout3"
-        android:layout_below="@id/linearLayout"
-        android:layout_marginBottom="0dp"
-        android:orientation="horizontal">
+            android:layout_width="fill_parent"
+            android:layout_height="10dip" />
 
-        <ImageButton
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:scaleType="fitXY"
-            android:id="@+id/Category13"
-            android:src="@drawable/duoxuan"/>
         <View
-            android:layout_width="15dip"
-            android:layout_height="match_parent"
-             />
-        <ImageButton
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:scaleType="fitXY"
-            android:id="@+id/Category14"
-            android:src="@drawable/xuanze"/>
-    </LinearLayout>
-    <View
-        android:layout_width="fill_parent"
-        android:layout_height="5dip"
-         />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/tiankong"
-        android:text="填空"
-        android:textSize="20dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"/>
-    <View
-        android:layout_width="fill_parent"
-        android:layout_height="5dip"
-         />
-    <View
-        android:layout_width="fill_parent"
-        android:layout_height="2dip"
-        android:background="#FF909090" />
-    <View
-        android:layout_width="fill_parent"
-        android:layout_height="5dip"
-         />
-    <LinearLayout
-        android:layout_weight="1"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/linearLayout4"
-        android:layout_marginBottom="0dp"
-        android:orientation="horizontal">
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="#FF909090" />
 
-        <ImageButton
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:scaleType="fitXY"
-            android:id="@+id/Category15"
-            android:src="@drawable/wuxuanyi"/>
         <View
-            android:layout_width="10dip"
-            android:layout_height="match_parent"
-             />
-        <ImageButton
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:scaleType="fitXY"
-            android:id="@+id/Category16"
-            android:src="@drawable/liuxuaner1"/>
-    </LinearLayout>
-    <View
-        android:layout_width="fill_parent"
-        android:layout_height="5dip"
-         />
-    <LinearLayout
-        android:layout_weight="1"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/linearLayout2"
-        android:layout_below="@id/linearLayout"
-        android:layout_marginBottom="0dp"
-        android:orientation="horizontal">
+            android:layout_width="fill_parent"
+            android:layout_height="10dip" />
 
-        <ImageButton
+        <LinearLayout
+            android:id="@+id/linearLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginBottom="0dp"
             android:layout_weight="1"
-            android:scaleType="fitXY"
-            android:src="@drawable/liuxuaner2"
-            android:id="@+id/Category17"
-            />
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/Category11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/mainidea" />
+
+            <View
+                android:layout_width="15dip"
+                android:layout_height="match_parent" />
+
+            <ImageButton
+                android:id="@+id/Category12"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/detail" />
+        </LinearLayout>
+
         <View
-            android:layout_width="10dip"
-            android:layout_height="match_parent"
-             />
-        <ImageButton
+            android:layout_width="fill_parent"
+            android:layout_height="5dip" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_below="@id/linearLayout"
+            android:layout_marginBottom="0dp"
             android:layout_weight="1"
-            android:scaleType="fitXY"
-            android:src="@drawable/jiuxuansan"
-            android:id="@+id/Category18"/>
-    </LinearLayout>
+            android:orientation="horizontal" >
 
-</LinearLayout>
+            <ImageButton
+                android:id="@+id/Category13"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/duoxuan" />
+
+            <View
+                android:layout_width="15dip"
+                android:layout_height="match_parent" />
+
+            <ImageButton
+                android:id="@+id/Category14"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/xuanze" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="5dip" />
+
+        <TextView
+            android:id="@+id/tiankong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="填空"
+            android:textSize="20dp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="5dip" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="#FF909090" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="5dip" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/Category15"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/wuxuanyi" />
+
+            <View
+                android:layout_width="10dip"
+                android:layout_height="match_parent" />
+
+            <ImageButton
+                android:id="@+id/Category16"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/liuxuaner1" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="5dip" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/linearLayout"
+            android:layout_marginBottom="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/Category17"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/liuxuaner2" />
+
+            <View
+                android:layout_width="10dip"
+                android:layout_height="match_parent" />
+
+            <ImageButton
+                android:id="@+id/Category18"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/jiuxuansan" />
+        </LinearLayout>
+    </LinearLayout>
 
 </LinearLayout>
