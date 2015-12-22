@@ -27,7 +27,7 @@ import android.widget.TextView;
 		// 导入布局  
 		LayoutInflater.from(context).inflate(R.layout.questiontextscrollview, this, true);  
 		questionText = (TextView) this.findViewById(R.id.QuestionText);  
-		textScrollView = (ScrollView) this.findViewById(R.id.TextScrollView);
+		textScrollView = (ScrollView) this.findViewById(R.id.TextInnerScrollView);
 		doubleClickText = (TextView) this.findViewById(R.id.DoubleClickText);  
 
 	}

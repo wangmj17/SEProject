@@ -69,7 +69,7 @@ public class ReadingQuestionsActivity extends Activity {
 		readingQuestionsActivity = this;
 
 		mainScrollView = (ScrollView) this.findViewById(R.id.MainScrollView);
-		textScrollView = (ScrollView) this.findViewById(R.id.TextScrollView);
+		textScrollView = (ScrollView) this.findViewById(R.id.TextInnerScrollView);
 		questionTextScrollView = (QuestionTextScrollView) this.findViewById(R.id.QuestionTextScrollView);
 		questionTabBar = (QuestionTabBar) this.findViewById(R.id.QuestionTabBar);
 		questionBottomBar = (QuestionBottomBar) this.findViewById(R.id.QuestionBottomBar);
